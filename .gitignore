@@ -1,0 +1,26 @@
+# Raw data and sensitive exports
+data_raw/
+
+# Intermediate outputs (optional; keep curated outputs elsewhere)
+results/
+
+# Office temp/lock files
+~$*
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# OS
+Thumbs.db
+.DS_Store
