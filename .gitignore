@@ -3,7 +3,7 @@ data_raw/
 
 # Intermediate outputs (optional; keep curated outputs elsewhere)
 results/
-
+data_processed/
 # Office temp/lock files
 ~$*
 
