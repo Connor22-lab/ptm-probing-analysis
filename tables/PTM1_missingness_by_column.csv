@@ -1,0 +1,22 @@
+,missing_percent
+GO Biological Process,100.0
+GO Cellular Component,100.0
+GO Molecular Function,100.0
+Genes,0.04806734258851094
+AVG Log2 Ratio,0.0
+# Unique Total Peptides,0.0
+ProteinGroups,0.0
+PTM.ModificationTitle,0.0
+Condition Denominator,0.0
+Condition Numerator,0.0
+Ratio,0.0
+% Change,0.0
+ProteinNames,0.0
+Absolute AVG Log2 Ratio,0.0
+ProteinDescriptions,0.0
+Group,0.0
+UniProtIds,0.0
+# of Ratios,0.0
+Qvalue,0.0
+Pvalue,0.0
+Comparison (group1/group2),0.0
