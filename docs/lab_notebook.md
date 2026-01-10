@@ -93,7 +93,8 @@ Discover and prioritise novel PTM sites in inflammasome signalling, using open-s
 **Meeting notes (if applicable):**  
 **AI use (if any; allowed uses only):**  
 
-## 2026-01-06 — Repo setup and logging baseline (LN-001)
+## LN-001 
+2026-01-06 — Repo setup and logging baseline 
 
 **Objective:** Initialise Git/GitHub repo and establish reproducible documentation + file governance.
 
@@ -123,7 +124,8 @@ Discover and prioritise novel PTM sites in inflammasome signalling, using open-s
 
 **AI use:** Used AI to create and format repo
 
-2026-01-07 — PTM1 QC + stats diagnostics workflow (LN-002)
+## LN-002
+2026-01-07 — PTM1 QC + stats diagnostics workflow 
 
 **Objective:** Set up a reproducible Python workflow to load data_raw/PTM1.tsv, generate QC summaries/plots, and export a curated PTM summary table (Comparison × PTM type). Validate whether Pvalue/Qvalue behave as expected for downstream inference.
 
@@ -174,3 +176,43 @@ Confirmed VS Code interpreter/env selection to ensure correct package availabili
 
 **AI use (if any; allowed uses only):**
 Used AI assistance to (i) draft Python scripts for QC and summarisation, (ii) troubleshoot Windows/VS Code/conda execution issues, and (iii) interpret diagnostic outputs (Pvalue vs Qvalue behaviour under multiple testing).
+
+## LN-003 — 
+
+2026/01/10
+**Objective:** 
+Prioritise biologically relevant PTM class for follow-up Spectronaut Analysis
+
+**Inputs (files):**  PTM1.tsv
+scripts/ptm_class_screen.py (created in VS Code)
+
+**Environment:**  VS Code, python
+
+**Methods / Actions:** Implemented a PTM class screen in python to identify PTM classes
+Evidence Filtering:
+# of Ratios >= 2
+
+# Unique Total Peptides >= 2
+
+Absolute AVG Log2 Ratio >= 0.3
+
+**Results / Outputs (filenames):**  
+results_small/ptm_class_summary.csv
+results_small/ptm_class_summary_by_comparison.csv
+
+**Interpretation / Decisions:**  
+PTM_class_summary.csv showed candidates: Phospho, GlyGly, HexNAc, Acetyl
+
+**Issues / Fixes:**  
+N/A
+
+**Next steps:** 
+Use ptm_class_summary_by_comparison.csv to confirm which PTM class is strongest in the primary biological comparison (e.g., priming vs activation contrast).
+
+Extend the script to automatically export Top N Phospho candidates per comparison (rank by Pvalue, then absolute effect size, then evidence/support).
+
+In Spectronaut, perform a focused re-analysis for Phospho (STY) (avoid wide PTM probing if possible) and export site-resolved PTM outputs (PTM site report) plus an optional run-pivot table to assess missingness/replicate consistency. 
+
+**Meeting notes (if applicable):**  
+N/A
+**AI use (if any; allowed uses only):** Used AI to create ptm_class_screen.py
