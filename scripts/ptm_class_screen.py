@@ -24,6 +24,54 @@ def main():
     for c in num_cols:
         df[c] = pd.to_numeric(df[c], errors="coerce")
 
+    # --- Targeted shortlist: UniProt Based ---
+    ptm_keep = ["Phospho (STY)", "GlyGly (K)", "Acetyl (K)", "HexNAc (ST)"]
+
+    uniprot_keep = [
+        "Q96P20",  # NLRP3
+        "Q9ULZ3",  # PYCARD / ASC
+        "P29466",  # CASP1
+        "P01584",  # IL1B
+        "Q14116",  # IL18
+        "P57764",  # GSDMD
+        "Q8TDX7",  # NEK7
+        "O14862",  # AIM2
+        "Q9NPP4",  # NLRC4
+        "Q06187",  # BTK
+    ]
+
+    f = df[df["PTM.ModificationTitle"].isin(ptm_keep)].copy()
+    pattern = "|".join(uniprot_keep)
+    f = f[f["UniProtIds"].astype(str).str.contains(pattern, na=False)].copy()
+
+    # Optional relaxed evidence filter so the shortlist isn't pure noise
+    f = f[(f["# of Ratios"] >= MIN_RATIOS) & (f["Absolute AVG Log2 Ratio"] >= MIN_ABS_LOG2)].copy()
+
+    f = f.sort_values(
+        ["Pvalue", "Absolute AVG Log2 Ratio", "# of Ratios", "# Unique Total Peptides"],
+        ascending=[True, False, False, False]
+    )
+
+    f.to_csv(OUTDIR / "filtered__targets_UniProt.csv", index=False)
+    print("Wrote:", OUTDIR / "filtered__targets_UniProt.csv", "rows:", len(f))
+    # --- Targeted shortlist (GENE-based): inflammasome genes + PTM classes of interest ---
+    ptm_keep = ["Phospho (STY)", "GlyGly (K)", "Acetyl (K)", "HexNAc (ST)"]
+    genes_keep = ["NLRP3", "PYCARD", "CASP1", "GSDMD", "IL1B", "IL18", "NEK7", "AIM2", "NLRC4", "BTK"]
+
+    g = df[df["PTM.ModificationTitle"].isin(ptm_keep)].copy()
+    g = g[g["Genes"].astype(str).str.contains("|".join(genes_keep), na=False)].copy()
+
+    # light evidence filter
+    g = g[(g["# of Ratios"] >= MIN_RATIOS) & (g["Absolute AVG Log2 Ratio"] >= MIN_ABS_LOG2)].copy()
+
+    g = g.sort_values(
+        ["Pvalue", "Absolute AVG Log2 Ratio", "# of Ratios", "# Unique Total Peptides"],
+        ascending=[True, False, False, False]
+    )
+
+    g.to_csv(OUTDIR / "filtered_targets_genes.csv", index=False)
+    print("Wrote:", OUTDIR / "filtered_targets_genes.csv", "rows:", len(g))
+
     # Evidence filter (power filter)
     e = df[
         (df["# of Ratios"] >= MIN_RATIOS) &
