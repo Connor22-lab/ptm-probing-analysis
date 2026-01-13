@@ -216,3 +216,84 @@ In Spectronaut, perform a focused re-analysis for Phospho (STY) (avoid wide PTM 
 **Meeting notes (if applicable):**  
 N/A
 **AI use (if any; allowed uses only):** Used AI to create ptm_class_screen.py
+
+## LN-004 — 
+
+**Date:** 2026-01-13
+
+**Objective**
+Generate interpretable volcano plots for inflammasome state transitions, focusing on Activation (Active vs Primed) for two priming conditions (LPS and P3C4).
+
+Validate whether the broad PTM probing export yields statistically meaningful candidates.
+
+Decide next analytical step and whether a narrower PTM search in Spectronaut is required to increase power.
+
+**Inputs (files):** PTM1.tsv and POI.csv  
+**Environment:** RStudio 
+**Methods / Actions:** 
+Comparison selection
+selected activation contrasts for each priming condition:
+LPS / LPS+Nigericin
+P3C4 / P3C4+Nigericin
+
+Created subsets:
+Cands1_LPS_act
+Cands1_P3C4_act
+
+To make the x-axis biologically consistent (positive = higher in active state), implemented:
+log2FC_state = -AVG Log2 Ratio
+Plotted x-axis as log2FC_state and y-axis as -log10(Qvalue).
+
+Volcano plot generation
+Applied conventional thresholds:
+log2FC ≥ 0.58 (≈1.5×), Q < 0.05
+Annotated points as UP/DOWN/NO based on these thresholds.
+Generated unlabelled, labelled, and POI-labelled volcano plots for both LPS and P3C4 activation.
+
+POI mapping
+Loaded POI UniProt list and implemented pattern-based matching for UniProtIds (to account for multiple IDs per row) so POI labelling was not dependent on exact single-ID matches. 
+
+**Results / Outputs (filenames):** 
+Candidate tables:
+Candidates_LPS_act_tr1.csv
+Candidates_P3C4_act_tr1.csv
+
+Volcano plots:
+VolcanoPlot1.png through VolcanoPlot10.png (variants with/without labels and POIs) 
+
+Volcano plots for both activation contrasts show no features meeting Q < 0.05 with the chosen effect-size threshold, consistent with the earlier finding that the PTM probing was too broad to produce statistically robust hits after multiple testing correction.
+
+The point clouds are heavily concentrated at low -log10(Qvalue) with a symmetric spread around log2FC ≈ 0, indicating limited evidence for strong differential PTM signals at the current search breadth.
+
+POI genes (e.g., CASP1, PYCARD, IL1B, GSDMD) appear in the datasets and can be labelled, but they remain low-significance under the current global multiple-testing burden.
+
+**Interpretation:** 
+The absence of significant hits is likely driven by a combination of:
+Large hypothesis space (many PTM classes / features tested),
+Limited power per feature (variable peptide evidence / replicate counts),
+Multiple-testing correction penalising broad probing.
+
+This supports the conclusion that the current “wide PTM probing” approach is better treated as exploratory and requires narrowing to generate actionable candidate PTMs. 
+
+**Decision:** Rerun the analysis in Spectronaut with a narrower PTM search.
+
+Rationale: Reducing the number of PTM classes and the overall feature space should:
+Increase statistical power
+Reduce the multiple-testing burden (improving Q-values),
+Yield clearer biological interpretation aligned with inflammasome activation biology.
+
+**Issues / Fixes:** 
+Minor changes to script in relation to labeling and x and y axis values
+ 
+**Next steps:** 
+Restrict PTMs to a small, biologically motivated set (example starting set):
+Phospho (STY) (signalling/kinase activity)
+Acetyl (K) (regulatory)
+GlyGly (K) (ubiquitination proxy)
+HexNAc (ST) (O-GlcNAc / glyco-related signalling)
+Maintain the same comparison structure (Activation contrasts) for direct comparability with the current outputs.
+ 
+**Meeting notes (if applicable):** N/A 
+
+**AI use (if any; allowed uses only):** 
+Used to assist changes in script, relating to log2FCstate
