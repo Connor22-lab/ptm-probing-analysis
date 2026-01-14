@@ -1,0 +1,2 @@
+data_raw/PTM1.tsv filter=lfs diff=lfs merge=lfs -text
+results_small/ptms_per_gene.xlsx filter=lfs diff=lfs merge=lfs -text
