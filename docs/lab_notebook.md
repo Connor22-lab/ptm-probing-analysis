@@ -297,3 +297,27 @@ Maintain the same comparison structure (Activation contrasts) for direct compara
 
 **AI use (if any; allowed uses only):** 
 Used to assist changes in script, relating to log2FCstate
+
+## LN-005 --
+
+**Date:**  16/01/2026
+
+**Objective:** Generate Volcano Plots for different Comparisons and Create pivot tables for genes of interest
+
+**Environment:**  R, Excel
+
+**Methods / Actions:** 
+Merge PTM1.tsv with genes of interest list, create pivot table from merged dataset, add slicer to filter by PTM modification
+Ran Rscripts to generate a series of volcano plots, done comparisons for LPS and P3C4 across different conditions
+
+**Results / Outputs (filenames):**  Series of volcano plots, ptms_per_gene,xlsx and revised_ptm_per_gene.xlsx
+
+**Interpretation / Decisions:** Need to run a closed search as very few modifications of signfigance
+
+**Issues / Fixes:** created a more robust gene list as was missing potentially important proteins with modifications
+
+**Next steps:** Present preliminary results and run a closed search 
+
+**Meeting notes (if applicable):**  N/A
+
+**AI use (if any; allowed uses only):** help with excel merge formatting
