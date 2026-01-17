@@ -18,8 +18,8 @@ library(ggrepel)
 setwd("C:/Users/conno/Desktop/Final Year School/Final Year Project/data_raw")
 ptm_file <- "PTM1.tsv"
 
-my_comparison <- "LPS / LPS+Nigericin"
-my_ptm <- "HexNAc (ST)"      # e.g., "Acetyl (K)", "Phospho (STY)"
+my_comparison <- "P3C4 / P3C4+Nigericin"
+my_ptm <- "Acetyl (K)"      # e.g., "Acetyl (K)", "Phospho (STY)"
 label_n <- 15               # number of highlighted points to label
 out_dir <- "C:/Users/conno/Desktop/Final Year School/Final Year Project/results" # where PNG + CSV will be saved
 
@@ -55,7 +55,11 @@ make_highlight_volcano <- function(data, comparison, ptm, out_dir=".", label_n=1
       )
     )
 
-  # ---- CSV: ALL sites with this PTM ----
+  # Filter rows that can actually be plotted (prevents geom_point warning)
+  df_plot <- df %>%
+    filter(!is.na(Qvalue), Qvalue > 0, !is.na(`AVG Log2 Ratio`))
+
+  # ---- CSV: ALL sites with this PTM (use df, not df_plot, so you keep full info) ----
   all_ptm_list <- df %>%
     filter(Highlight == ptm) %>%
     select(
@@ -75,6 +79,8 @@ make_highlight_volcano <- function(data, comparison, ptm, out_dir=".", label_n=1
     ) %>%
     arrange(Qvalue)
 
+  if (!dir.exists(out_dir)) dir.create(out_dir, recursive = TRUE)
+
   out_csv <- file.path(
     out_dir,
     paste0("All_", safe_name(ptm), "_sites_", safe_name(comparison), ".csv")
@@ -84,10 +90,13 @@ make_highlight_volcano <- function(data, comparison, ptm, out_dir=".", label_n=1
   message("Saved CSV: ", out_csv, " (rows: ", nrow(all_ptm_list), ")")
 
   # ---- Select points to label (top by Qvalue within highlighted PTM) ----
-  top_hits <- all_ptm_list %>% head(label_n)
+  top_hits <- df_plot %>%
+    filter(Highlight == ptm) %>%
+    arrange(Qvalue) %>%
+    slice_head(n = label_n)
 
   # ---- Volcano plot with highlighted PTM ----
-  p <- ggplot(df, aes(x = `AVG Log2 Ratio`, y = -log10(Qvalue))) +
+  p <- ggplot(df_plot, aes(x = `AVG Log2 Ratio`, y = -log10(Qvalue))) +
     geom_point(aes(color = Highlight, size = Highlight, alpha = Highlight)) +
     scale_color_manual(values = c("Other PTMs" = "grey80", ptm = "darkgreen"), name = "PTM Type") +
     scale_size_manual(values = c("Other PTMs" = 0.5, ptm = 2)) +
@@ -103,21 +112,14 @@ make_highlight_volcano <- function(data, comparison, ptm, out_dir=".", label_n=1
     theme_bw(base_size = 12) +
     theme(plot.title = element_text(hjust = 0.5, face = "bold"))
 
+  # Label directly from top_hits (NO join => no many-to-many warning)
   if (nrow(top_hits) > 0) {
-    # Need coordinates for labels; pull from df for those rows by matching key columns
-    # (Genes + ProteinGroups + AVG Log2 Ratio + Qvalue is usually sufficient)
-    label_df <- df %>%
-      inner_join(
-        top_hits %>% select(Genes, ProteinGroups, `AVG Log2 Ratio`, Qvalue),
-        by = c("Genes", "ProteinGroups", "AVG Log2 Ratio", "Qvalue")
-      )
-
     p <- p + geom_text_repel(
-      data = label_df,
+      data = top_hits,
       aes(label = Genes),
       size = 2.5,
       color = "darkgreen",
-      max.overlaps = 20
+      max.overlaps = 50   # increase if you still see overlap warnings
     )
   }
 
@@ -131,6 +133,7 @@ make_highlight_volcano <- function(data, comparison, ptm, out_dir=".", label_n=1
 
   return(list(plot = p, csv = out_csv, png = out_png, n_sites = nrow(all_ptm_list)))
 }
+
 
 # -----------------------------
 # RUN (ONE PLOT)

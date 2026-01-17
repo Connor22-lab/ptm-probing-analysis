@@ -1,4 +1,14 @@
 60 kDA HSP60 - heavily upregulated in P3C4, gene expression of Th1 promoting IL-12 and IL-15
 The Ubiquitin Ligase TRIM56 Regulates Innate Immune Responses to Intracellular Double-Stranded DNA - acetylated and ubiquitinated in my data
-The E3 ubiquitin ligase TRIM33 is essential for cytosolic RNA-induced NLRP3 inflammasome activation - acetylated in my data
+The E3 ubiquitin ligase TRIM33 is essential for cytosolic RNA-induced NLRP3 inflammasome activation - acetylated in my data LPS/P3C4 vs LPS/P3C4+Nigericin
 MAP3K7 -TAK1 restricts spontaneous NLRP3 activation and cell death to control myeloid proliferation - HexNAc in my data
+NOTCH2 - downregulation links with aTreg pyroptosis, increases level of phosphorylated ASC -> GSDMD-N-mediated pyroptosis - HexNAc in P3C4/P3C4+Nigericin
+LSP1 - enhancer of NLRP3 assembly - phosphorylated in P3C4/P3C4+Nigericin
+TNFAIP3 - induction of Pam3CSK4-tolerance in monocytic THP-1 cells, crucial regulator that turns off inflammation
+prevents excessive immune response by targetting NF-kB signalling - it is methylated in my data but probably not significant.
+HSPD1 can modulate inflammasome activation and significant result in upregulation, P3C4+Nigericin/LPS
+ILK - mediates pathways PI3K/AKT/NFkB, promotes phosphorylation of NFkB - HexNAc PTM in Unstim / LPS + Nigericin
+ZYX - interacts with RIGI , scaffolding protein - HexNAc PTM in Unstim / LPS + Nigericin
+myh9 - IL1B release -  HexNAc PTM in Unstim / LPS + Nigericin
+RAB12 - LRRK2 Kinase activation - Implicated in parkinsons disease, NLPR3 dysregulation involved in neuroinflammation in parkinsons disease.ubiquinated in Unstim vs LPS+Nigericin
+CNPY4 - involved in TLR4 singalling pathway. ubiquinated in Unstim vs LPS+Nigericin
