@@ -12,3 +12,6 @@ ZYX - interacts with RIGI , scaffolding protein - HexNAc PTM in Unstim / LPS + N
 myh9 - IL1B release -  HexNAc PTM in Unstim / LPS + Nigericin
 RAB12 - LRRK2 Kinase activation - Implicated in parkinsons disease, NLPR3 dysregulation involved in neuroinflammation in parkinsons disease.ubiquinated in Unstim vs LPS+Nigericin
 CNPY4 - involved in TLR4 singalling pathway. ubiquinated in Unstim vs LPS+Nigericin
+ICAM - TNF-a regulates expression and N-glycolysation
+TRAF3IP3 involved in activation
+FADD and TRADD - NFkB

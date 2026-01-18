@@ -18,8 +18,15 @@ library(ggrepel)
 setwd("C:/Users/conno/Desktop/Final Year School/Final Year Project/data_raw")
 ptm_file <- "PTM1.tsv"
 
+# Let's see what experimental comparisons are in the data
+print("=== All comparisons in your dataset ===")
+all_comparisons <- unique(PTM_data$`Comparison (group1/group2)`)
+for(i in 1:length(all_comparisons)){
+  print(paste(i, ":", all_comparisons[i]))
+}
+
 my_comparison <- "P3C4 / P3C4+Nigericin"
-my_ptm <- "Acetyl (K)"      # e.g., "Acetyl (K)", "Phospho (STY)"
+my_ptm <- "Acetyl (K)"      # e.g., "Acetyl (K)", "Phospho (STY)" , "GlyGly (K)", "HexNAc (ST)", etc.
 label_n <- 15               # number of highlighted points to label
 out_dir <- "C:/Users/conno/Desktop/Final Year School/Final Year Project/results" # where PNG + CSV will be saved
 
