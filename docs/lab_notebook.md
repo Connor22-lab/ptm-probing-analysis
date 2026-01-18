@@ -321,3 +321,17 @@ Ran Rscripts to generate a series of volcano plots, done comparisons for LPS and
 **Meeting notes (if applicable):**  N/A
 
 **AI use (if any; allowed uses only):** help with excel merge formatting
+
+## LN-006
+
+**Date:** 18/01/2026 
+**Objective:**  Generate a series of csv and volcano plots for different comparisons to dictate closed search, noting POI and adding them to pivot table/notes
+**Inputs (files):**  PTM1.tsv , ptm_highlight_volcano.R
+**Environment:**  R
+**Methods / Actions:** Ran script changing comparison and modification type, added line to display all comparisons to reduce error  
+**Results / Outputs (filenames):**  too many to list
+**Interpretation / Decisions:**  Hard to interpret an open search but some intersting proteins were modified that are linked to inflammasome regulation
+**Issues / Fixes:** N/A  
+**Next steps:** Communicate results with DINO and decide next step
+**Meeting notes (if applicable):**  N/A
+**AI use (if any; allowed uses only):** none
