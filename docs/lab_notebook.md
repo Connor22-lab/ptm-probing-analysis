@@ -335,3 +335,34 @@ Ran Rscripts to generate a series of volcano plots, done comparisons for LPS and
 **Next steps:** Communicate results with DINO and decide next step
 **Meeting notes (if applicable):**  N/A
 **AI use (if any; allowed uses only):** none
+
+## LN-007
+
+**Date:** 23/01/26   
+
+**Objective:**  Investigate Data from pivot table, create flow chart
+
+**Inputs (files):**  PTM1.tsv, revised_ptm_per_gene.xlsx
+**Environment:**  Excel, RStudio, PowerPoint
+
+**Methods / Actions:**  The values for PTMs detected on select proteins were very unusual.
+After selecting a few from the table, such as IL1B and HSP, I decided to cross check all the columns.
+Discovered that proteins with 15 ptms,there was one per comparison, all at the same site.
+Follow up diagnostics in R to determine similarity in modifications across proteins.
+Workflow creation in Powerpoint, detailing the MS DATA, Spectronaut search, R work, observations and next steps
+
+
+**Results / Outputs (filenames):**  
+PTMs were nearly always consistent across conditions, especially with inflammasome components.
+PTM Workflow.pptx
+
+**Interpretation / Decisions:**  
+Data has some serious flaws in strength, good for a prelimnary search and to get used to the software and how to analyse the data sets.
+
+**Issues / Fixes:** N/A 
+
+**Next steps:** Start to write up my Visual Abstract, and presentation for bens, try to combine them 
+
+**Meeting notes (if applicable):**  N/A
+
+**AI use (if any; allowed uses only):** N/A

@@ -10,3 +10,7 @@
 5) Primary PTM class to focus next: Phospho (STY). Rationale: highest candidate density (rows_candidate and candidate_frac) among signalling-relevant PTMs under evidence filtering, with strong median effect size.
 
 Secondary PTM class (follow-up): GlyGly (K). Rationale: larger median effect size but lower candidate fraction; may require more careful handling due to sparsity.
+
+Change to Excel spreadsheet, values were off due to counting repeated evidence rows, thats why I was seeing multiples of 15. count of 15 = one site, being detected across different conditions, I think its actually being detected once in every condition, Not entirely sure what that means.
+Decision: manipulate Data in R to create more accurate table, current table is misleading and uninformative.
+
