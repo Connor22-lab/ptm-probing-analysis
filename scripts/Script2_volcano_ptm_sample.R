@@ -20,10 +20,21 @@ setwd("C:/Users/conno/Desktop/Final Year School/Final Year Project/data_raw")
 
 # STEP 3: LOAD YOUR PTM DATA
 # This is the same data file from Script 1
-PTM_data <- as.data.frame(fread("PTM1.tsv"))
+PTM_data <- as.data.frame(fread("ptm_closed_search.tsv"))
 
 print(paste("Data loaded:", nrow(PTM_data), "PTM observations"))
 
+PTM_data$`Comparison (group1/group2)` <-
+  gsub("\\s+", " ", trimws(PTM_data$`Comparison (group1/group2)`))
+
+
+# ---- PROJECT PATHS ----
+PROJECT_ROOT <- dirname(getwd())
+RUN_TAG <- "closed_search"   # change to "open_search" when needed
+OUT_DIR <- file.path(PROJECT_ROOT, "figures", RUN_TAG)
+dir.create(OUT_DIR, showWarnings = FALSE, recursive = TRUE)
+
+safe_name <- function(x) gsub("[^A-Za-z0-9]+", "_", x)
 # ====================================================================
 # PART A: UNDERSTANDING YOUR COMPARISONS
 # ====================================================================
@@ -42,11 +53,12 @@ for(i in 1:length(all_comparisons)){
 
 LPS_comparisons <- c(
   "Unstim / LPS",              # Effect of LPS priming
-  "LPS / Nigericin",           # LPS-primed vs Nigericin alone
-  "Unstim / LPS+Nigericin",    # Full activation vs unstimulated
-  "LPS / LPS+Nigericin",      # Effect of adding Nigericin to LPS
-  "LPS+Nigericin / Nigericin"  # Effect of LPS priming on activated cells
+  "Nigericin / LPS",           # LPS-primed vs Nigericin alone
+  "Unstim / LPS_Nigericin",    # Full activation vs unstimulated
+  "LPS / LPS_Nigericin",      # Effect of adding Nigericin to LPS
+  "Nigericin / LPS_Nigericin"  # Effect of LPS priming on activated cells
 )
+LPS_comparisons <- gsub("\\s+", " ", trimws(LPS_comparisons))
 
 print("\n=== We will analyze these 5 LPS-focused comparisons ===")
 for(comp in LPS_comparisons){
@@ -59,6 +71,7 @@ for(comp in LPS_comparisons){
 
 # Set the plot style - black and white theme looks professional
 theme_set(theme_bw(base_size = 12))
+
 
 # FUNCTION: make_volcano()
 # This function creates one volcano plot for a given comparison
@@ -149,9 +162,10 @@ make_volcano <- function(comparison_name) {
   
   # STEP 7: Save the plot
   # Create filename by replacing special characters with underscores
-  filename <- paste0("Volcano_", gsub("/| |\\+", "_", comparison_name), ".png")
+  filename <- paste0("Volcano_", safe_name(comparison_name), "_", RUN_TAG, ".png")
   
-  ggsave(filename,              # Save with this filename
+  
+  ggsave(filename = file.path(OUT_DIR, filename),               # Save with this filename
          plot = p,              # Save this plot
          width = 20,            # 20 cm wide
          height = 15,           # 15 cm tall
@@ -192,7 +206,7 @@ print("PART C: HIGHLIGHTING SPECIFIC PTM TYPES")
 print("========================================")
 
 # STEP 1: Choose which comparison to focus on
-my_comparison <- "LPS / LPS+Nigericin"  # YOU CAN CHANGE THIS
+my_comparison <- "LPS / LPS_Nigericin"# YOU CAN CHANGE THIS
 
 print(paste("Focusing on:", my_comparison))
 
@@ -308,13 +322,16 @@ if(nrow(top_ptm_hits) > 0) {
 print(p_highlight)
 
 # STEP 10: Save highlighted plot
-highlight_filename <- paste0("Volcano_Highlighted_", 
-                             gsub("[^[:alnum:]]", "_", my_ptm), 
-                             "_", 
-                             gsub("/| |\\+", "_", my_comparison), 
-                             ".png")
+highlight_filename <- paste0(
+  "Volcano_Highlighted_",
+  safe_name(my_ptm), "_",
+  safe_name(my_comparison), "_",
+  RUN_TAG,
+  ".png"
+)
 
-ggsave(highlight_filename, 
+
+ggsave(filename = file.path(OUT_DIR, highlight_filename), 
        plot = p_highlight, 
        width = 22, 
        height = 16, 
@@ -337,13 +354,16 @@ all_ptm_list <- highlight_data %>%
   arrange(Qvalue)                  # Sort by significance
 
 # Save as CSV
-csv_filename <- paste0("All_", 
-                       gsub("[^[:alnum:]]", "_", my_ptm), 
-                       "_sites_", 
-                       gsub("/| |\\+", "_", my_comparison), 
-                       ".csv")
+csv_filename <- paste0(
+  "All_",
+  safe_name(my_ptm), "_sites_",
+  safe_name(my_comparison), "_",
+  RUN_TAG,
+  ".csv"
+)
 
-write.csv(all_ptm_list, csv_filename, row.names = FALSE)
+
+write.csv(all_ptm_list, file.path(OUT_DIR, csv_filename), row.names = FALSE)
 
 print(paste("Saved:", csv_filename))
 
