@@ -366,3 +366,32 @@ Data has some serious flaws in strength, good for a prelimnary search and to get
 **Meeting notes (if applicable):**  N/A
 
 **AI use (if any; allowed uses only):** N/A
+
+## LN-007 
+
+**Date:** 2026/01/27
+
+**Objective:** Explore Parameters on Spectronaut, Generate reports for site localisation, Test AlphaMap, evaluate closed search data
+
+**Inputs (files):** ptm_closed_search.tsv, scripts/Script1_Bar graphs_all_ptms.R, scripts/Script2_volcano_ptm_sample.R
+
+**Environment:**  Spectrnaut, AlphaMap, Excel
+
+**Methods / Actions:**  
+First I exported the list of candidates with and without global imputation.
+Tested the effect of cross run normalisation.
+Generated Report for AlphaMap
+Generated Report for site localisation (adjusted the threshold to 0.5)
+Imported site localisation tsv into excel, merged with POI table for ease of use
+Imported closed search into R, ran script for bar charts and made slight changes Script2 to change OUTDIR and labelling of files.
+
+**Results / Outputs (filenames):**results/tables/ptm_localisation_poi.xlsx, data_raw/ptm_closed_search_alphamap_export.tsv, data_raw/ptm_closed_search_noimputation.tsv, data_raw/ptm_closed_search_site_localisation.tsv, 
+
+**Interpretation / Decisions:** Unsure of specificity/reliabiliy of site localisation in Spectronaut, lots of whole values/suspicous results.
+not much of a difference between closed and open search, Q-values are all non-significant
+May have to correct the FDR by removing fixed modification from statistical testing
+
+**Issues / Fixes:** N/A
+**Next steps:**  statistical testing, volcano plot generation of POI. evaluate site localisation data. work on visual abstract and presentation for ben
+**Meeting notes (if applicable):**  N/A
+**AI use (if any; allowed uses only):** troubleshooting in Excel.
