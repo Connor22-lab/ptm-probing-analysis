@@ -20,7 +20,7 @@ setwd("C:/Users/conno/Desktop/Final Year School/Final Year Project/data_raw")
 
 # STEP 3: LOAD YOUR PTM DATA
 # This is the same data file from Script 1
-PTM_data <- as.data.frame(fread("ptm_closed_search.tsv"))
+PTM_data <- as.data.frame(fread("PTM1.tsv"))
 
 print(paste("Data loaded:", nrow(PTM_data), "PTM observations"))
 
@@ -30,7 +30,7 @@ PTM_data$`Comparison (group1/group2)` <-
 
 # ---- PROJECT PATHS ----
 PROJECT_ROOT <- dirname(getwd())
-RUN_TAG <- "closed_search"   # change to "open_search" when needed
+RUN_TAG <- "open_search"   # change to "open_search" when needed
 OUT_DIR <- file.path(PROJECT_ROOT, "figures", RUN_TAG)
 dir.create(OUT_DIR, showWarnings = FALSE, recursive = TRUE)
 
@@ -51,17 +51,14 @@ for(i in 1:length(all_comparisons)){
 # Nigericin = NLRP3 activator (activation signal)
 # P3C4+Nigericin = Full inflammasome activation
 
-LPS_comparisons <- c(
-  "Unstim / LPS",              # Effect of LPS priming
-  "Nigericin / LPS",           # LPS-primed vs Nigericin alone
-  "Unstim / LPS_Nigericin",    # Full activation vs unstimulated
-  "LPS / LPS_Nigericin",      # Effect of adding Nigericin to LPS
-  "Nigericin / LPS_Nigericin"  # Effect of LPS priming on activated cells
-)
-LPS_comparisons <- gsub("\\s+", " ", trimws(LPS_comparisons))
+P3C4_comparisons <- c(
+  "Unstim / P3C4",              # Effect of LPS priming
+  "P3C4 / P3C4+Nigericin")
+
+P3C4_comparisons <- gsub("\\s+", " ", trimws(P3C4_comparisons))
 
 print("\n=== We will analyze these 5 LPS-focused comparisons ===")
-for(comp in LPS_comparisons){
+for(comp in P3C4_comparisons){
   print(comp)
 }
 
@@ -94,11 +91,11 @@ make_volcano <- function(comparison_name) {
   
   # Mark UP-regulated PTMs (increased in numerator condition)
   volcano_data$Significance[volcano_data$`AVG Log2 Ratio` >= 0.585 & 
-                              volcano_data$Qvalue <= 0.05] <- "Up"
+                              volcano_data$Pvalue <= 0.05] <- "Up"
   
   # Mark DOWN-regulated PTMs (decreased in numerator condition)
   volcano_data$Significance[volcano_data$`AVG Log2 Ratio` <= -0.585 & 
-                              volcano_data$Qvalue <= 0.05] <- "Down"
+                              volcano_data$Pvalue <= 0.05] <- "Down"
   
   # STEP 3: Count how many PTMs are significantly changed
   n_up <- sum(volcano_data$Significance == "Up")
@@ -112,11 +109,11 @@ make_volcano <- function(comparison_name) {
   # STEP 4: Get the top 10 most significant PTMs for labeling
   top_hits <- volcano_data %>%
     filter(Significance != "Not significant") %>%  # Only significant ones
-    arrange(Qvalue) %>%                            # Sort by Q-value (lowest first)
+    arrange(Pvalue) %>%                            # Sort by Q-value (lowest first)
     head(10)                                       # Take top 10
   
   # STEP 5: CREATE THE VOLCANO PLOT
-  p <- ggplot(volcano_data, aes(x = `AVG Log2 Ratio`, y = -log10(Qvalue))) +
+  p <- ggplot(volcano_data, aes(x = `AVG Log2 Ratio`, y = -log10(Pvalue))) +
     
     # Add points for each PTM site
     geom_point(aes(color = Significance),  # Color by significance
@@ -141,7 +138,7 @@ make_volcano <- function(comparison_name) {
     # Add labels
     labs(title = comparison_name,          # Title at top
          x = "Log2 Fold Change",          # X-axis label
-         y = "-Log10 Q-value") +          # Y-axis label
+         y = "-Log10 P-value") +          # Y-axis label
     
     # Customize appearance
     theme(plot.title = element_text(hjust = 0.5,     # Center title
@@ -187,7 +184,7 @@ print("CREATING VOLCANO PLOTS FOR P3C4 ANALYSIS")
 print("========================================")
 
 # Loop through each comparison and create a volcano plot
-for(comp in LPS_comparisons) {
+for(comp in P3C4_comparisons) {
   p <- make_volcano(comp)  # Create and save plot
   print(p)                 # Display plot in RStudio
 }
@@ -206,7 +203,7 @@ print("PART C: HIGHLIGHTING SPECIFIC PTM TYPES")
 print("========================================")
 
 # STEP 1: Choose which comparison to focus on
-my_comparison <- "LPS / LPS_Nigericin"# YOU CAN CHANGE THIS
+my_comparison <- "P3C4 / P3C4+Nigericin"# YOU CAN CHANGE THIS
 
 print(paste("Focusing on:", my_comparison))
 
@@ -225,7 +222,7 @@ ptm_counts <- PTM_data %>%
   group_by(PTM.ModificationTitle) %>%                        # Group by PTM type
   summarise(
     Total = n(),                                             # Count total sites
-    Significant = sum(Qvalue < 0.05 & abs(`AVG Log2 Ratio`) > 0.585)  # Count significant
+    Significant = sum(Pvalue < 0.05 & abs(`AVG Log2 Ratio`) > 0.585)  # Count significant
   ) %>%
   arrange(desc(Total))  # Sort by most abundant
 
@@ -234,7 +231,7 @@ print(ptm_counts)
 
 # STEP 4: Choose which PTM to highlight
 
-my_ptm <- "GlyGly (K)"  # YOU CAN CHANGE THIS - use exact name from list above
+my_ptm <- "Acetyl (K)"  # YOU CAN CHANGE THIS - use exact name from list above
 
 print(paste("\nHighlighting:", my_ptm))
 
@@ -252,9 +249,9 @@ highlight_data$Highlight <- ifelse(
 # Label significance separately
 highlight_data$Significance <- "Not significant"
 highlight_data$Significance[highlight_data$`AVG Log2 Ratio` >= 0.585 & 
-                              highlight_data$Qvalue <= 0.05] <- "Up"
+                              highlight_data$Pvalue <= 0.05] <- "Up"
 highlight_data$Significance[highlight_data$`AVG Log2 Ratio` <= -0.585 & 
-                              highlight_data$Qvalue <= 0.05] <- "Down"
+                              highlight_data$Pvalue <= 0.05] <- "Down"
 
 # STEP 6: Count highlighted PTMs
 n_highlighted <- sum(highlight_data$Highlight == my_ptm)
@@ -267,12 +264,12 @@ print(paste("Significant", my_ptm, "sites:", n_sig_highlighted))
 # STEP 7: Get top sites for labeling (whether significant or not)
 top_ptm_hits <- highlight_data %>%
   filter(Highlight == my_ptm) %>%  # Only your PTM
-  arrange(Qvalue) %>%               # Sort by Q-value
+  arrange(Pvalue) %>%               # Sort by Q-value
   head(15)                          # Take top 15
 
 # STEP 8: CREATE HIGHLIGHTED VOLCANO PLOT
 p_highlight <- ggplot(highlight_data, 
-                      aes(x = `AVG Log2 Ratio`, y = -log10(Qvalue))) +
+                      aes(x = `AVG Log2 Ratio`, y = -log10(Pvalue))) +
   
   # Add points with different sizes and colors for highlighted PTM
   geom_point(aes(color = Highlight,    # Color by PTM type
@@ -351,7 +348,7 @@ all_ptm_list <- highlight_data %>%
          Qvalue, 
          Pvalue, 
          Significance) %>%
-  arrange(Qvalue)                  # Sort by significance
+  arrange(Pvalue)                  # Sort by significance
 
 # Save as CSV
 csv_filename <- paste0(

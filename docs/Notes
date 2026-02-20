@@ -17,3 +17,21 @@ TRAF3IP3 involved in activation
 FADD and TRADD - NFkB
 ILF2 - binds directly to NLRP3 - phosphorylated in P3C4 vs LPS comparison
 Rac2 - activation induce NLRP3 activation - phosphorylated in P3C4 vs LPS comparison
+
+
+Turned off global imputation, changed localisation cutoff to 0.5
+Exported site localisation report with cutoff 0.5, no imputation
+Exported candidates list, 0.9 localisation, no imputation
+Exported alphamap report, no imputation localisation 0.5
+
+MAP3K12 inhibitor = massive deregulation in unstim/nigericin - with little protein abundance change
+notch1 ptm deregulaion unstim/nigericin
+Unstim/P3C4 : IRAK1 ptm deregulation 
+Unstim/ P3C4 + Nigericin MAP3K12 inhibitor, 
+P3C4/ P3C4 + Nigericin = IRAK4 , SUMO
+
+Ok so have exported the candidates list, but need to flip condition numerator and denominators, as for most comparisons they are the wrong way around.
+
+Gene Mania Protocol:
+10-30 genes
+one comparison, one modification, assorted by P/Q-value, and Discordance (difference in log2 of PTM and protein)
