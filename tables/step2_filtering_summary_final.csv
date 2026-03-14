@@ -1,0 +1,4 @@
+"Stage","N_rows","N_removed","Pct_retained"
+"Raw (post-Spectronaut export)",828005,0,100
+"Contaminants removed",809169,18836,97.7
+"Biological PTMs only",110482,698687,13.3

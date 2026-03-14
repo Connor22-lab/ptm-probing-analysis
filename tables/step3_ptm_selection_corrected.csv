@@ -1,0 +1,12 @@
+"PTM.ModificationTitle","Max_mean_abs_PTM_log2FC","Max_mean_abs_corr_log2FC","Mean_proteins","Pct_robust_or_stable"
+"GlyGly (K)",2.257,2.095,374,73.4
+"Hex (K)",1.985,1.909,278,74.6
+"Crotonyl",2.001,1.844,391,70.7
+"Trimethyl (K)",1.868,1.747,506,72.7
+"Acetyl (K)",1.733,1.667,309,71.1
+"Myristoyl",1.809,1.62,356,70.6
+"HexNAc (ST)",1.618,1.527,336,69.8
+"Phospho (STY)",1.758,1.523,416,67.7
+"Sulfo (STY)",1.477,1.228,709,66
+"Nitrosyl",1.328,1.058,676,61.3
+"Oxidation (W)",0.985,0.539,340,55.9

@@ -1,0 +1,47 @@
+"Genes","PTM.ModificationTitle","N_sites","N_comparisons","Mean_abs_log2FC","Max_abs_log2FC"
+"CASP1","Nitrosyl",1,6,0.732,1.341
+"GSDMD","Nitrosyl",2,6,0.764,3.283
+"GSDMD","Oxidation (W)",1,6,2.096,4.723
+"HSP90AA1","GlyGly (K)",5,6,2.023,11.157
+"HSP90AA1","Nitrosyl",4,6,2.203,7.397
+"HSP90AA1","Sulfo (STY)",4,6,1.016,5.201
+"HSP90AA1","Hex (K)",3,6,4.939,9.805
+"HSP90AA1","Trimethyl (K)",2,6,1.096,5.513
+"HSP90AA1","Acetyl (K)",1,6,0.908,1.859
+"HSP90AA1","HexNAc (ST)",1,4,0.19,0.341
+"HSP90AA1","Oxidation (W)",1,6,0.598,1.217
+"HSP90AA1","Phospho (STY)",1,6,0.848,1.387
+"HSP90AB1","Nitrosyl",4,6,2.476,6.868
+"HSP90AB1","Crotonyl",3,6,0.804,2.008
+"HSP90AB1","Acetyl (K)",2,6,0.776,1.629
+"HSP90AB1","GlyGly (K)",2,6,1.562,3.714
+"HSP90AB1","HexNAc (ST)",2,3,0.714,1.183
+"HSP90AB1","Oxidation (W)",2,6,0.713,1.345
+"HSP90AB1","Sulfo (STY)",2,4,0.649,1.328
+"HSP90AB1","Trimethyl (K)",2,6,0.77,1.561
+"HSP90AB1","Hex (K)",1,6,6.722,10.165
+"HSP90AB1","Myristoyl",1,6,2.117,6.122
+"HSP90AB1","Phospho (STY)",1,6,7.251,10.944
+"HSPA8","Hex (K)",7,6,1.301,7.234
+"HSPA8","Sulfo (STY)",6,6,1.341,8.747
+"HSPA8","Acetyl (K)",4,6,3.439,10.303
+"HSPA8","HexNAc (ST)",4,6,2.774,7.741
+"HSPA8","Phospho (STY)",4,6,0.679,3.424
+"HSPA8","Crotonyl",3,6,2.859,9.066
+"HSPA8","Myristoyl",3,6,0.393,1.126
+"HSPA8","Trimethyl (K)",3,6,0.549,1.439
+"HSPA8","GlyGly (K)",2,6,0.736,1.979
+"HSPA8","Nitrosyl",1,6,0.852,2.186
+"HSPA8","Oxidation (W)",1,6,0.294,0.552
+"IL1B","Sulfo (STY)",6,6,1.514,3.334
+"IL1B","Trimethyl (K)",2,6,2.503,5.29
+"IL1B","Acetyl (K)",1,6,4.612,9.594
+"IL1B","GlyGly (K)",1,6,1.166,2.773
+"IL1B","Hex (K)",1,6,1.044,2.405
+"IL1B","Myristoyl",1,6,1.693,3.287
+"IL1B","Nitrosyl",1,6,1.907,4.203
+"IL1B","Phospho (STY)",1,6,1.709,2.794
+"PPP2CA","Trimethyl (K)",1,6,0.619,0.942
+"PYCARD","Phospho (STY)",1,6,0.79,1.367
+"PYCARD","Sulfo (STY)",1,6,1.358,2.136
+"PYCARD","Trimethyl (K)",1,6,2.771,6.664

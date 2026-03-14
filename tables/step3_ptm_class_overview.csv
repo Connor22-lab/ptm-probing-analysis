@@ -1,0 +1,133 @@
+Comparison (group1/group2),PTM.ModificationTitle,N_unique_proteins,N_unique_sites,N_rows,Mean_abs_log2FC,Median_abs_log2FC
+P3C4+Nigericin / Unstim,GlyGly (K),380,576,576,2.234,1.045
+Nigericin / Unstim,GlyGly (K),381,577,577,2.17,0.992
+P3C4+Nigericin / P3C4,GlyGly (K),382,578,578,2.049,0.999
+P3C4+Nigericin / Unstim,Hex (K),279,408,408,2.009,0.923
+P3C4+Nigericin / P3C4,Crotonyl,394,591,591,1.992,0.939
+P3C4+Nigericin / P3C4,Hex (K),283,415,415,1.991,0.87
+Nigericin / Unstim,Hex (K),284,415,415,1.956,0.857
+LPS / Unstim,Hex (K),281,412,412,1.919,0.618
+LPS+Nigericin / Unstim,Hex (K),280,410,410,1.905,0.745
+LPS+Nigericin / Unstim,GlyGly (K),377,557,557,1.864,0.844
+Nigericin / Unstim,Crotonyl,399,599,599,1.859,0.852
+P3C4+Nigericin / Unstim,Trimethyl (K),508,876,876,1.858,0.963
+LPS+Nigericin / P3C4,Acetyl (K),311,431,431,1.844,0.755
+LPS+Nigericin / P3C4,GlyGly (K),381,561,561,1.825,0.791
+P3C4+Nigericin / LPS,Hex (K),279,412,412,1.825,0.858
+P3C4+Nigericin / LPS,GlyGly (K),375,561,561,1.823,0.779
+P3C4+Nigericin / Unstim,Myristoyl,357,512,512,1.813,0.937
+P3C4+Nigericin / Unstim,Crotonyl,392,592,592,1.786,0.887
+P3C4+Nigericin / LPS,Acetyl (K),310,437,437,1.763,0.785
+P3C4 / Unstim,Hex (K),286,419,419,1.759,0.522
+P3C4+Nigericin / Unstim,Phospho (STY),414,629,629,1.757,0.917
+P3C4+Nigericin / P3C4,Myristoyl,365,521,521,1.751,0.905
+P3C4+Nigericin / LPS,Trimethyl (K),510,880,880,1.75,0.885
+P3C4+Nigericin / P3C4,Trimethyl (K),511,877,877,1.73,0.952
+P3C4+Nigericin / Nigericin,GlyGly (K),384,583,583,1.727,0.692
+Nigericin / Unstim,Myristoyl,360,512,512,1.724,0.838
+P3C4+Nigericin / Unstim,Acetyl (K),318,444,444,1.723,0.873
+P3C4 / Unstim,GlyGly (K),383,578,578,1.714,0.504
+LPS+Nigericin / Unstim,Crotonyl,400,604,604,1.71,0.659
+Nigericin / Unstim,Acetyl (K),307,437,437,1.709,0.839
+P3C4+Nigericin / P3C4,Phospho (STY),417,625,625,1.705,0.987
+Nigericin / Unstim,Phospho (STY),415,630,630,1.704,0.886
+P3C4+Nigericin / LPS,Crotonyl,396,596,596,1.704,0.81
+LPS+Nigericin / P3C4,Crotonyl,393,593,593,1.699,0.649
+P3C4+Nigericin / LPS+Nigericin,Hex (K),284,418,418,1.693,0.603
+LPS+Nigericin / Unstim,Acetyl (K),312,443,443,1.69,0.673
+LPS / Unstim,GlyGly (K),378,567,567,1.685,0.59
+Nigericin / Unstim,Trimethyl (K),515,877,877,1.684,0.884
+LPS+Nigericin / Unstim,Trimethyl (K),512,881,881,1.68,0.749
+P3C4+Nigericin / LPS,Phospho (STY),415,618,618,1.663,0.8
+LPS+Nigericin / P3C4,Trimethyl (K),511,879,879,1.658,0.705
+LPS+Nigericin / Unstim,Myristoyl,358,515,515,1.651,0.71
+LPS+Nigericin / P3C4,Hex (K),282,412,412,1.649,0.648
+LPS / Unstim,Acetyl (K),310,439,439,1.647,0.576
+LPS+Nigericin / LPS,Acetyl (K),311,436,436,1.64,0.668
+P3C4+Nigericin / Nigericin,Hex (K),284,417,417,1.639,0.541
+P3C4+Nigericin / Unstim,HexNAc (ST),337,526,526,1.632,0.867
+P3C4+Nigericin / LPS+Nigericin,Crotonyl,394,599,599,1.627,0.536
+LPS+Nigericin / LPS,Trimethyl (K),513,870,870,1.623,0.661
+P3C4+Nigericin / P3C4,Acetyl (K),311,434,434,1.62,0.834
+LPS+Nigericin / LPS,GlyGly (K),375,556,556,1.617,0.732
+P3C4 / Unstim,Myristoyl,363,520,520,1.601,0.491
+Nigericin / Unstim,HexNAc (ST),333,533,533,1.593,0.772
+LPS+Nigericin / Unstim,Phospho (STY),416,620,620,1.591,0.648
+LPS / Unstim,Trimethyl (K),514,879,879,1.586,0.574
+P3C4+Nigericin / P3C4,HexNAc (ST),339,535,535,1.584,0.834
+LPS+Nigericin / LPS,Hex (K),280,416,416,1.583,0.622
+LPS+Nigericin / P3C4,Myristoyl,360,515,515,1.582,0.609
+LPS+Nigericin / Nigericin,GlyGly (K),377,559,559,1.578,0.567
+LPS+Nigericin / Unstim,HexNAc (ST),343,531,531,1.578,0.691
+LPS+Nigericin / P3C4,Phospho (STY),412,609,609,1.576,0.648
+P3C4+Nigericin / LPS+Nigericin,Acetyl (K),311,437,437,1.558,0.639
+P3C4+Nigericin / LPS,HexNAc (ST),336,526,526,1.54,0.735
+LPS+Nigericin / Nigericin,Trimethyl (K),511,875,875,1.537,0.55
+LPS+Nigericin / LPS,Myristoyl,356,517,517,1.536,0.629
+LPS+Nigericin / LPS,Phospho (STY),411,608,608,1.532,0.598
+LPS+Nigericin / Nigericin,Crotonyl,401,605,605,1.532,0.471
+LPS+Nigericin / P3C4,HexNAc (ST),348,540,540,1.532,0.596
+P3C4+Nigericin / LPS+Nigericin,Myristoyl,357,520,520,1.532,0.549
+P3C4+Nigericin / LPS+Nigericin,Phospho (STY),406,604,604,1.526,0.56
+P3C4+Nigericin / LPS,Myristoyl,359,521,521,1.525,0.732
+P3C4+Nigericin / LPS+Nigericin,GlyGly (K),380,561,561,1.524,0.603
+P3C4+Nigericin / LPS+Nigericin,Trimethyl (K),508,877,877,1.514,0.59
+LPS+Nigericin / Nigericin,Phospho (STY),401,600,600,1.51,0.523
+P3C4 / Unstim,Crotonyl,397,592,592,1.509,0.421
+P3C4+Nigericin / Nigericin,Myristoyl,362,519,519,1.509,0.545
+LPS+Nigericin / LPS,Crotonyl,399,602,602,1.501,0.627
+P3C4+Nigericin / Nigericin,Acetyl (K),308,434,434,1.49,0.633
+P3C4 / Unstim,Acetyl (K),315,439,439,1.477,0.505
+P3C4+Nigericin / P3C4,Sulfo (STY),719,1386,1386,1.473,0.828
+P3C4+Nigericin / Unstim,Sulfo (STY),706,1370,1370,1.469,0.84
+LPS / Unstim,Crotonyl,402,603,603,1.458,0.494
+LPS+Nigericin / LPS,HexNAc (ST),342,529,529,1.456,0.567
+P3C4 / Unstim,Trimethyl (K),510,878,878,1.45,0.498
+P3C4+Nigericin / Nigericin,Crotonyl,397,591,591,1.448,0.532
+LPS / Unstim,Myristoyl,357,517,517,1.447,0.524
+LPS / Unstim,HexNAc (ST),338,534,534,1.441,0.507
+LPS+Nigericin / Nigericin,Hex (K),278,414,414,1.441,0.501
+P3C4+Nigericin / LPS+Nigericin,HexNAc (ST),337,521,521,1.428,0.496
+LPS+Nigericin / Nigericin,Myristoyl,357,512,512,1.421,0.511
+LPS+Nigericin / Nigericin,Acetyl (K),311,439,439,1.398,0.482
+P3C4+Nigericin / Nigericin,Trimethyl (K),504,871,871,1.398,0.563
+LPS+Nigericin / Nigericin,HexNAc (ST),340,536,536,1.385,0.44
+P3C4+Nigericin / LPS,Sulfo (STY),716,1378,1378,1.367,0.705
+Nigericin / Unstim,Sulfo (STY),724,1399,1399,1.348,0.739
+P3C4 / Unstim,Phospho (STY),432,648,648,1.341,0.457
+P3C4+Nigericin / Nigericin,Phospho (STY),407,615,615,1.327,0.482
+P3C4+Nigericin / Unstim,Nitrosyl,681,946,946,1.324,0.846
+P3C4+Nigericin / Nigericin,HexNAc (ST),332,522,522,1.31,0.5
+P3C4+Nigericin / P3C4,Nitrosyl,678,944,944,1.307,0.869
+LPS / Unstim,Phospho (STY),430,642,642,1.283,0.479
+LPS+Nigericin / Unstim,Sulfo (STY),714,1403,1403,1.283,0.65
+P3C4 / Unstim,HexNAc (ST),341,539,539,1.224,0.417
+LPS+Nigericin / P3C4,Sulfo (STY),723,1408,1408,1.212,0.559
+Nigericin / Unstim,Nitrosyl,676,944,944,1.186,0.695
+P3C4+Nigericin / LPS+Nigericin,Sulfo (STY),709,1379,1379,1.178,0.498
+P3C4 / Unstim,Sulfo (STY),724,1405,1405,1.169,0.43
+LPS+Nigericin / Unstim,Nitrosyl,684,948,948,1.167,0.607
+P3C4+Nigericin / LPS,Nitrosyl,681,948,948,1.157,0.692
+LPS / Unstim,Sulfo (STY),718,1397,1397,1.148,0.439
+LPS+Nigericin / P3C4,Nitrosyl,676,946,946,1.129,0.624
+LPS+Nigericin / LPS,Sulfo (STY),712,1390,1390,1.127,0.551
+LPS / Unstim,Nitrosyl,683,950,950,1.123,0.478
+P3C4+Nigericin / Nigericin,Sulfo (STY),713,1372,1372,1.084,0.495
+P3C4 / Unstim,Nitrosyl,679,947,947,1.054,0.454
+LPS+Nigericin / LPS,Nitrosyl,682,953,953,1.049,0.566
+LPS+Nigericin / Nigericin,Sulfo (STY),717,1390,1390,1.003,0.406
+P3C4+Nigericin / Nigericin,Nitrosyl,676,939,939,0.99,0.541
+P3C4+Nigericin / Unstim,Oxidation (W),345,465,465,0.981,0.727
+LPS+Nigericin / Nigericin,Nitrosyl,678,948,948,0.978,0.4
+P3C4+Nigericin / P3C4,Oxidation (W),344,464,464,0.945,0.772
+P3C4+Nigericin / LPS+Nigericin,Nitrosyl,679,944,944,0.927,0.46
+Nigericin / Unstim,Oxidation (W),346,467,467,0.827,0.563
+P3C4+Nigericin / LPS,Oxidation (W),345,466,466,0.813,0.603
+LPS+Nigericin / P3C4,Oxidation (W),344,465,465,0.793,0.52
+LPS+Nigericin / Unstim,Oxidation (W),345,465,465,0.763,0.476
+LPS+Nigericin / LPS,Oxidation (W),344,465,465,0.69,0.477
+P3C4+Nigericin / LPS+Nigericin,Oxidation (W),345,465,465,0.583,0.431
+P3C4 / Unstim,Oxidation (W),344,464,464,0.565,0.301
+P3C4+Nigericin / Nigericin,Oxidation (W),345,466,466,0.563,0.396
+LPS / Unstim,Oxidation (W),345,466,466,0.531,0.32
+LPS+Nigericin / Nigericin,Oxidation (W),345,468,468,0.507,0.246

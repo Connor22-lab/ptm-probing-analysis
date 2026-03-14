@@ -1,0 +1,32 @@
+"PTM.ModificationTitle","N_rows","N_unique_proteins","N_unique_sites","N_comparisons"
+"Carbamidomethyl (C)",267208,5602,17854,15
+"Oxidation (M)",79278,2399,5526,15
+"Didehydro",57201,1764,5221,15
+"Methyl (E)",36612,1478,2940,15
+"Oxidation (P)",40134,1447,3134,15
+"Cation:Na (DE)",25863,1067,2390,15
+"Cation:Mg[II]",22149,969,2045,15
+"Dimethyl (KR)",20729,929,1736,15
+"Formyl",15967,908,1854,15
+"Sulfo (STY)",20192,881,1911,15
+"Carbamylation (KR)",19775,834,1701,15
+"Methyl (KR)",15369,767,1307,15
+"Nitrosyl",13911,698,1001,15
+"Hydroxymethyl",14302,666,1070,15
+"Propionamide",11693,650,1083,15
+"Carboxy",10685,646,1272,15
+"Dioxidation (MW)",15831,626,1142,15
+"Carboxymethyl",10237,570,947,15
+"Trimethyl (K)",12480,538,951,15
+"Phospho (STY)",8812,491,773,15
+"Crotonyl",8498,443,705,15
+"Trioxidation (C)",8726,443,614,15
+"GlyGly (K)",8156,408,632,15
+"Myristoyl",7483,389,596,15
+"HexNAc (ST)",7795,386,625,15
+"Oxidation (W)",6851,342,465,15
+"Acetyl (K)",6244,338,512,15
+"Hex (K)",6011,322,510,15
+"Biotin",5581,301,456,15
+"Phosphoadenosine",3132,221,310,15
+"Cysteinyl",2107,134,164,15

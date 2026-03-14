@@ -1,0 +1,270 @@
+Genes,PTM.ModificationTitle,Comparison (group1/group2),N_sites,PTM_log2FC,Protein_log2FC,Corrected_log2FC,Abs_corrected_log2FC,Pvalue,Correction_class
+HSP90AA1,Nitrosyl,P3C4+Nigericin / Unstim,4,-4.127,-0.981,-3.146,3.146,0,Robust after correction
+HSP90AA1,Phospho (STY),LPS+Nigericin / LPS,1,-1.387,-0.355,-1.032,1.032,0.0015,Robust after correction
+HSP90AA1,GlyGly (K),LPS+Nigericin / LPS,5,-0.438,-0.355,-0.083,0.366,0.0015,Robust after correction
+HSP90AB1,HexNAc (ST),P3C4+Nigericin / P3C4,1,-1.183,-0.922,-0.262,0.262,0.0039,Substantially reduced
+IL1B,Sulfo (STY),P3C4+Nigericin / P3C4,5,-2.697,-2.591,-0.106,0.746,0.004,Direction reversed
+IL1B,Nitrosyl,P3C4+Nigericin / Unstim,1,-1.628,-0.305,-1.323,1.323,0.0046,Robust after correction
+HSP90AA1,Oxidation (W),P3C4+Nigericin / P3C4,1,-1.217,-0.914,-0.303,0.303,0.0051,Substantially reduced
+HSP90AA1,Oxidation (W),P3C4+Nigericin / Unstim,1,-1.197,-0.981,-0.216,0.216,0.0067,Substantially reduced
+IL1B,Nitrosyl,LPS / Unstim,1,1.519,1.586,-0.068,0.068,0.0088,Direction reversed
+HSP90AB1,Oxidation (W),P3C4+Nigericin / P3C4,2,-1.229,-0.922,-0.308,0.308,0.0108,Substantially reduced
+IL1B,GlyGly (K),P3C4+Nigericin / P3C4,1,-2.773,-2.591,-0.182,0.182,0.012,Substantially reduced
+IL1B,GlyGly (K),P3C4 / Unstim,1,2.405,2.286,0.119,0.119,0.013,Substantially reduced
+IL1B,Hex (K),P3C4 / Unstim,1,2.405,2.286,0.119,0.119,0.013,Substantially reduced
+IL1B,Myristoyl,LPS / Unstim,1,1.791,1.586,0.205,0.205,0.0138,Substantially reduced
+HSP90AB1,Oxidation (W),P3C4+Nigericin / Unstim,2,-1.253,-0.98,-0.273,0.273,0.0163,Substantially reduced
+IL1B,Hex (K),P3C4+Nigericin / P3C4,1,-2.193,-2.591,0.398,0.398,0.0197,Direction reversed
+HSPA8,Sulfo (STY),P3C4+Nigericin / P3C4,6,-0.378,-0.881,0.503,0.89,0.0204,Substantially reduced
+IL1B,Nitrosyl,P3C4+Nigericin / P3C4,1,-4.203,-2.591,-1.612,1.612,0.0232,Substantially reduced
+IL1B,Sulfo (STY),P3C4 / Unstim,5,2.617,2.286,0.331,0.707,0.0243,Direction reversed
+HSPA8,Myristoyl,P3C4+Nigericin / P3C4,3,-0.758,-0.881,0.123,0.367,0.0253,Substantially reduced
+PYCARD,Trimethyl (K),LPS / Unstim,1,1.65,0.403,1.247,1.247,0.0297,Robust after correction
+IL1B,Nitrosyl,P3C4 / Unstim,1,2.575,2.286,0.289,0.289,0.0303,Substantially reduced
+HSP90AA1,GlyGly (K),P3C4+Nigericin / P3C4,5,-1.37,-0.914,-0.455,1.14,0.0321,Substantially reduced
+HSP90AB1,GlyGly (K),P3C4+Nigericin / P3C4,2,-1.303,-0.922,-0.381,0.381,0.0363,Substantially reduced
+HSPA8,Sulfo (STY),P3C4 / Unstim,6,1.691,0.01,1.681,1.727,0.0366,Protein stable
+IL1B,Phospho (STY),P3C4 / Unstim,1,2.715,2.286,0.428,0.428,0.0391,Substantially reduced
+IL1B,Sulfo (STY),LPS / Unstim,5,1.53,1.586,-0.056,0.248,0.0436,Direction reversed
+IL1B,Phospho (STY),P3C4+Nigericin / P3C4,1,-2.794,-2.591,-0.203,0.203,0.0443,Substantially reduced
+HSPA8,Myristoyl,P3C4+Nigericin / Unstim,2,-0.541,-0.871,0.33,0.419,0.0461,Substantially reduced
+HSP90AB1,Nitrosyl,P3C4+Nigericin / P3C4,4,-1.764,-0.922,-0.842,0.905,0.0533,Substantially reduced
+HSP90AB1,Nitrosyl,LPS+Nigericin / LPS,4,0.492,-0.359,0.851,1.042,0.0536,Robust after correction
+HSP90AA1,Trimethyl (K),P3C4+Nigericin / P3C4,1,-0.926,-0.914,-0.011,0.011,0.0546,Substantially reduced
+HSP90AA1,Acetyl (K),P3C4+Nigericin / P3C4,1,-1.34,-0.914,-0.425,0.425,0.0767,Substantially reduced
+HSP90AA1,GlyGly (K),P3C4+Nigericin / Unstim,5,-1.116,-0.981,-0.135,1.211,0.0774,Direction reversed
+HSP90AA1,Phospho (STY),P3C4+Nigericin / P3C4,1,-1.157,-0.914,-0.242,0.242,0.0804,Substantially reduced
+HSPA8,Crotonyl,LPS+Nigericin / Unstim,3,-2.138,-0.515,-1.623,2.56,0.0839,Robust after correction
+HSPA8,Sulfo (STY),LPS / Unstim,6,1.406,-0.299,1.705,1.879,0.0853,Protein stable
+HSP90AA1,Nitrosyl,P3C4+Nigericin / P3C4,3,-2.865,-0.914,-1.951,2.341,0.0867,Substantially reduced
+HSPA8,HexNAc (ST),LPS+Nigericin / Unstim,4,1.942,-0.515,2.457,2.457,0.0886,Robust after correction
+HSPA8,Hex (K),LPS+Nigericin / Unstim,7,0.803,-0.515,1.317,1.817,0.0886,Robust after correction
+HSPA8,Hex (K),LPS+Nigericin / LPS,6,0.066,-0.216,0.282,1.118,0.0889,Protein stable
+HSPA8,Nitrosyl,LPS+Nigericin / LPS,1,-2.186,-0.216,-1.97,1.97,0.0931,Protein stable
+HSP90AB1,Hex (K),LPS+Nigericin / LPS,1,0.588,-0.359,0.947,0.947,0.099,Robust after correction
+HSP90AB1,Sulfo (STY),P3C4+Nigericin / P3C4,2,-1.079,-0.922,-0.157,0.249,0.0995,Direction reversed
+HSPA8,HexNAc (ST),LPS / Unstim,4,3.906,-0.299,4.205,4.205,0.0999,Protein stable
+HSPA8,GlyGly (K),LPS / Unstim,2,0.702,-0.299,1.001,1.277,0.0999,Protein stable
+GSDMD,Nitrosyl,LPS / Unstim,2,1.343,-0.109,1.452,1.452,0.1012,Protein stable
+HSPA8,Sulfo (STY),LPS+Nigericin / LPS,6,-1.224,-0.216,-1.008,1.598,0.1027,Protein stable
+HSP90AA1,Acetyl (K),P3C4 / Unstim,1,1.859,-0.067,1.926,1.926,0.1094,Protein stable
+HSPA8,Trimethyl (K),LPS+Nigericin / LPS,3,-0.357,-0.216,-0.141,0.414,0.1123,Protein stable
+HSP90AA1,Trimethyl (K),P3C4+Nigericin / Unstim,2,-3.125,-0.981,-2.144,2.388,0.1126,Direction reversed
+HSPA8,Hex (K),LPS / Unstim,6,0.735,-0.299,1.033,1.422,0.1185,Protein stable
+HSP90AB1,Trimethyl (K),LPS / Unstim,2,-0.267,-0.337,0.07,0.07,0.1241,Direction reversed
+HSP90AB1,Acetyl (K),P3C4+Nigericin / Unstim,2,-0.946,-0.98,0.035,0.271,0.1243,Substantially reduced
+HSPA8,Myristoyl,LPS / Unstim,2,-0.117,-0.299,0.181,0.236,0.1289,Protein stable
+HSP90AB1,Acetyl (K),P3C4+Nigericin / P3C4,2,-1.391,-0.922,-0.47,0.47,0.1293,Substantially reduced
+PYCARD,Sulfo (STY),P3C4 / Unstim,1,1.939,0.521,1.418,1.418,0.1315,Robust after correction
+HSP90AB1,Trimethyl (K),LPS+Nigericin / LPS,2,0.749,-0.359,1.109,1.109,0.1317,Robust after correction
+HSP90AA1,GlyGly (K),P3C4 / Unstim,5,0.254,-0.067,0.321,0.397,0.1365,Protein stable
+HSPA8,HexNAc (ST),LPS+Nigericin / LPS,4,-1.964,-0.216,-1.748,2.763,0.1393,Protein stable
+HSP90AA1,GlyGly (K),LPS+Nigericin / Unstim,5,-0.972,-0.72,-0.252,3.923,0.1401,Direction reversed
+HSP90AB1,Sulfo (STY),P3C4+Nigericin / Unstim,1,-0.64,-0.98,0.34,0.34,0.1402,Direction reversed
+HSP90AB1,Crotonyl,LPS+Nigericin / Unstim,3,-0.484,-0.696,0.212,0.696,0.1404,Robust after correction
+HSPA8,Trimethyl (K),P3C4+Nigericin / P3C4,2,-1.053,-0.881,-0.172,0.386,0.1417,Substantially reduced
+HSP90AB1,Nitrosyl,P3C4+Nigericin / Unstim,4,1.376,-0.98,2.357,2.357,0.1432,Direction reversed
+PYCARD,Sulfo (STY),LPS / Unstim,1,2.136,0.403,1.732,1.732,0.1446,Robust after correction
+IL1B,Phospho (STY),LPS / Unstim,1,2.333,1.586,0.746,0.746,0.1481,Substantially reduced
+IL1B,Sulfo (STY),LPS+Nigericin / LPS,5,-0.915,-0.922,0.006,0.214,0.1532,Substantially reduced
+HSP90AB1,Oxidation (W),LPS+Nigericin / Unstim,2,-0.861,-0.696,-0.165,0.165,0.1579,Substantially reduced
+GSDMD,Nitrosyl,LPS+Nigericin / Unstim,2,1.889,0.135,1.754,1.754,0.1583,Protein stable
+HSP90AB1,Nitrosyl,LPS+Nigericin / Unstim,4,3.016,-0.696,3.712,3.852,0.1635,Substantially reduced
+IL1B,Myristoyl,P3C4+Nigericin / P3C4,1,-3.287,-2.591,-0.696,0.696,0.1639,Substantially reduced
+HSP90AA1,Oxidation (W),LPS / Unstim,1,-0.521,-0.365,-0.156,0.156,0.1672,Substantially reduced
+HSP90AA1,Oxidation (W),LPS+Nigericin / Unstim,1,-0.577,-0.72,0.143,0.143,0.1682,Direction reversed
+IL1B,Myristoyl,P3C4 / Unstim,1,2.968,2.286,0.681,0.681,0.1699,Substantially reduced
+HSPA8,Hex (K),P3C4+Nigericin / Unstim,7,0.569,-0.871,1.439,1.439,0.1717,Robust after correction
+GSDMD,Oxidation (W),LPS / Unstim,1,1.565,-0.109,1.674,1.674,0.1733,Protein stable
+PPP2CA,Trimethyl (K),P3C4+Nigericin / P3C4,1,-0.545,-0.949,0.404,0.404,0.1741,Direction reversed
+HSP90AA1,Phospho (STY),P3C4 / Unstim,1,0.544,-0.067,0.61,0.61,0.1775,Protein stable
+HSPA8,Crotonyl,LPS+Nigericin / LPS,3,-2.208,-0.216,-1.992,2.499,0.1829,Protein stable
+IL1B,Acetyl (K),LPS+Nigericin / LPS,1,-9.594,-0.922,-8.672,8.672,0.1858,Robust after correction
+PYCARD,Trimethyl (K),P3C4+Nigericin / Unstim,1,-5.442,0.637,-6.079,6.079,0.187,Robust after correction
+HSP90AB1,Phospho (STY),LPS+Nigericin / Unstim,1,10.944,-0.696,11.641,11.641,0.1875,Robust after correction
+HSPA8,Nitrosyl,LPS / Unstim,1,1.475,-0.299,1.774,1.774,0.1889,Protein stable
+HSPA8,Phospho (STY),P3C4+Nigericin / P3C4,4,0.53,-0.881,1.41,1.41,0.1917,Direction reversed
+HSP90AA1,Phospho (STY),LPS+Nigericin / Unstim,1,-1.174,-0.72,-0.454,0.454,0.1938,Substantially reduced
+IL1B,Trimethyl (K),LPS+Nigericin / Unstim,2,3.368,0.665,2.703,2.703,0.1947,Robust after correction
+PYCARD,Trimethyl (K),P3C4+Nigericin / P3C4,1,-6.664,0.116,-6.779,6.779,0.1983,Protein stable
+IL1B,Acetyl (K),P3C4+Nigericin / P3C4,1,-4.241,-2.591,-1.65,1.65,0.1986,Substantially reduced
+IL1B,Myristoyl,LPS+Nigericin / LPS,1,-0.898,-0.922,0.023,0.023,0.2005,Direction reversed
+IL1B,Acetyl (K),P3C4 / Unstim,1,3.964,2.286,1.678,1.678,0.2015,Substantially reduced
+IL1B,Trimethyl (K),LPS+Nigericin / LPS,2,1.992,-0.922,2.914,2.914,0.2038,Robust after correction
+IL1B,Acetyl (K),LPS / Unstim,1,3.652,1.586,2.065,2.065,0.2068,Robust after correction
+HSPA8,Sulfo (STY),LPS+Nigericin / Unstim,6,0.182,-0.515,0.697,0.697,0.2077,Robust after correction
+HSP90AB1,Oxidation (W),LPS / Unstim,2,-0.237,-0.337,0.1,0.145,0.212,Substantially reduced
+IL1B,Sulfo (STY),P3C4+Nigericin / Unstim,4,-0.506,-0.305,-0.201,0.337,0.2134,Robust after correction
+IL1B,Trimethyl (K),P3C4+Nigericin / P3C4,2,-0.524,-2.591,2.067,2.607,0.2169,Substantially reduced
+HSP90AB1,Phospho (STY),P3C4+Nigericin / P3C4,1,10.808,-0.922,11.729,11.729,0.2171,Robust after correction
+HSP90AB1,Phospho (STY),P3C4+Nigericin / Unstim,1,10.458,-0.98,11.438,11.438,0.2172,Robust after correction
+HSP90AA1,Sulfo (STY),P3C4 / Unstim,3,-0.644,-0.067,-0.577,0.712,0.2196,Protein stable
+HSP90AA1,Nitrosyl,LPS / Unstim,4,-0.705,-0.365,-0.34,0.458,0.2213,Robust after correction
+IL1B,Trimethyl (K),P3C4 / Unstim,2,2.905,2.286,0.619,0.619,0.2227,Substantially reduced
+HSP90AA1,Nitrosyl,LPS+Nigericin / LPS,4,-1.903,-0.355,-1.548,2.028,0.2245,Direction reversed
+HSP90AB1,Trimethyl (K),LPS+Nigericin / Unstim,2,0.482,-0.696,1.178,1.178,0.2293,Robust after correction
+HSP90AB1,Crotonyl,P3C4+Nigericin / Unstim,3,-1.382,-0.98,-0.402,0.464,0.2302,Direction reversed
+HSP90AB1,Acetyl (K),LPS / Unstim,2,-0.39,-0.337,-0.053,0.255,0.2419,Substantially reduced
+HSP90AB1,Crotonyl,P3C4+Nigericin / P3C4,3,-1.519,-0.922,-0.597,0.851,0.2438,Robust after correction
+HSPA8,Crotonyl,P3C4+Nigericin / Unstim,3,1.969,-0.871,2.839,2.839,0.245,Robust after correction
+HSP90AA1,Sulfo (STY),P3C4+Nigericin / Unstim,1,-0.902,-0.981,0.079,0.079,0.2498,Direction reversed
+HSPA8,Sulfo (STY),P3C4+Nigericin / Unstim,6,1.313,-0.871,2.183,2.183,0.2513,Robust after correction
+HSPA8,Oxidation (W),P3C4+Nigericin / P3C4,1,-0.552,-0.881,0.329,0.329,0.2559,Direction reversed
+HSPA8,HexNAc (ST),P3C4 / Unstim,4,3.771,0.01,3.761,3.761,0.265,Protein stable
+HSP90AA1,Sulfo (STY),P3C4+Nigericin / P3C4,1,-1.037,-0.914,-0.122,0.122,0.2664,Substantially reduced
+HSP90AB1,GlyGly (K),LPS+Nigericin / Unstim,2,-0.759,-0.696,-0.062,2.096,0.2713,Robust after correction
+HSP90AB1,Crotonyl,LPS+Nigericin / LPS,3,-0.58,-0.359,-0.221,0.221,0.2722,Robust after correction
+IL1B,Nitrosyl,LPS+Nigericin / LPS,1,-0.957,-0.922,-0.035,0.035,0.2811,Substantially reduced
+HSPA8,Trimethyl (K),LPS / Unstim,3,-0.201,-0.299,0.098,0.402,0.2814,Protein stable
+PPP2CA,Trimethyl (K),P3C4+Nigericin / Unstim,1,-0.942,-1.076,0.133,0.133,0.2833,Direction reversed
+HSP90AB1,Acetyl (K),LPS+Nigericin / Unstim,2,-0.905,-0.696,-0.209,0.223,0.2836,Direction reversed
+PYCARD,Sulfo (STY),LPS+Nigericin / LPS,1,-1.156,0.197,-1.353,1.353,0.285,Protein stable
+HSP90AB1,Oxidation (W),LPS+Nigericin / LPS,2,-0.625,-0.359,-0.266,0.299,0.2907,Robust after correction
+HSP90AB1,Myristoyl,P3C4 / Unstim,1,-0.304,-0.059,-0.245,0.245,0.2915,Protein stable
+PPP2CA,Trimethyl (K),LPS / Unstim,1,-0.914,-0.413,-0.501,0.501,0.2915,Robust after correction
+HSP90AA1,GlyGly (K),LPS / Unstim,5,-0.534,-0.365,-0.169,4.118,0.2917,Robust after correction
+HSPA8,Acetyl (K),P3C4+Nigericin / P3C4,2,0.646,-0.881,1.527,6.324,0.2922,Robust after correction
+HSPA8,Acetyl (K),P3C4 / Unstim,4,-2.771,0.01,-2.781,5.566,0.2927,Protein stable
+HSPA8,Myristoyl,LPS+Nigericin / Unstim,2,-0.408,-0.515,0.107,0.212,0.2953,Substantially reduced
+IL1B,Phospho (STY),LPS+Nigericin / Unstim,1,1.371,0.665,0.706,0.706,0.3065,Robust after correction
+IL1B,Trimethyl (K),P3C4+Nigericin / Unstim,2,2.381,-0.305,2.686,2.699,0.3081,Robust after correction
+HSPA8,Oxidation (W),P3C4+Nigericin / Unstim,1,-0.476,-0.871,0.395,0.395,0.3094,Direction reversed
+PYCARD,Trimethyl (K),LPS+Nigericin / LPS,1,-0.729,0.197,-0.926,0.926,0.3243,Protein stable
+IL1B,Phospho (STY),LPS+Nigericin / LPS,1,-0.961,-0.922,-0.04,0.04,0.3271,Substantially reduced
+HSP90AA1,Phospho (STY),P3C4+Nigericin / Unstim,1,-0.613,-0.981,0.368,0.368,0.3348,Direction reversed
+PPP2CA,Trimethyl (K),LPS+Nigericin / LPS,1,0.515,-0.328,0.843,0.843,0.3366,Robust after correction
+HSP90AA1,Nitrosyl,P3C4 / Unstim,3,-0.445,-0.067,-0.378,0.472,0.3415,Protein stable
+HSP90AB1,GlyGly (K),P3C4+Nigericin / Unstim,2,-1.716,-0.98,-0.736,1.998,0.3427,Robust after correction
+HSPA8,Myristoyl,P3C4 / Unstim,2,0.094,0.01,0.084,0.084,0.3429,Protein stable
+HSPA8,Phospho (STY),LPS+Nigericin / Unstim,4,-0.608,-0.515,-0.093,0.096,0.3434,Substantially reduced
+HSP90AA1,Sulfo (STY),LPS / Unstim,3,-1.819,-0.365,-1.454,1.77,0.3438,Direction reversed
+HSP90AB1,Trimethyl (K),P3C4+Nigericin / Unstim,2,1.561,-0.98,2.541,2.541,0.3455,Robust after correction
+PYCARD,Sulfo (STY),P3C4+Nigericin / Unstim,1,1.467,0.637,0.83,0.83,0.3467,Robust after correction
+HSPA8,Phospho (STY),LPS / Unstim,4,-0.687,-0.299,-0.388,0.388,0.3484,Protein stable
+HSP90AB1,Nitrosyl,LPS / Unstim,4,2.524,-0.337,2.861,2.877,0.3542,Substantially reduced
+GSDMD,Oxidation (W),LPS+Nigericin / LPS,1,-0.666,0.244,-0.91,0.91,0.3639,Protein stable
+HSP90AB1,GlyGly (K),P3C4 / Unstim,2,-0.413,-0.059,-0.355,1.878,0.3649,Protein stable
+HSP90AA1,Trimethyl (K),LPS+Nigericin / Unstim,1,-0.482,-0.72,0.238,0.238,0.3669,Direction reversed
+HSP90AA1,Trimethyl (K),P3C4 / Unstim,1,0.189,-0.067,0.256,0.256,0.3681,Protein stable
+HSP90AB1,GlyGly (K),LPS / Unstim,2,-1.194,-0.337,-0.857,1.476,0.3774,Robust after correction
+HSPA8,Myristoyl,LPS+Nigericin / LPS,3,-0.225,-0.216,-0.009,0.091,0.3791,Protein stable
+HSP90AB1,Crotonyl,LPS / Unstim,3,0.096,-0.337,0.433,0.601,0.3809,Substantially reduced
+HSP90AB1,Trimethyl (K),P3C4+Nigericin / P3C4,2,1.314,-0.922,2.236,2.236,0.3839,Robust after correction
+HSPA8,Acetyl (K),LPS+Nigericin / Unstim,3,-0.875,-0.515,-0.36,3.329,0.3848,Robust after correction
+HSPA8,GlyGly (K),P3C4 / Unstim,2,0.722,0.01,0.712,0.721,0.3875,Protein stable
+PYCARD,Phospho (STY),P3C4+Nigericin / P3C4,1,-1.367,0.116,-1.483,1.483,0.3893,Protein stable
+PYCARD,Trimethyl (K),P3C4 / Unstim,1,1.221,0.521,0.7,0.7,0.3944,Robust after correction
+HSPA8,Trimethyl (K),P3C4 / Unstim,2,0.306,0.01,0.296,0.394,0.3949,Protein stable
+HSP90AA1,Hex (K),LPS+Nigericin / Unstim,2,-1.602,-0.72,-0.882,8.203,0.3956,Robust after correction
+HSPA8,Crotonyl,P3C4+Nigericin / P3C4,3,-3.803,-0.881,-2.922,2.922,0.4004,Substantially reduced
+HSP90AB1,GlyGly (K),LPS+Nigericin / LPS,2,0.435,-0.359,0.794,0.794,0.4039,Robust after correction
+PYCARD,Phospho (STY),P3C4 / Unstim,1,1.1,0.521,0.579,0.579,0.4126,Robust after correction
+HSPA8,GlyGly (K),LPS+Nigericin / LPS,2,-0.073,-0.216,0.143,0.604,0.4181,Protein stable
+HSPA8,Hex (K),P3C4 / Unstim,7,1.2,0.01,1.19,1.4,0.4199,Protein stable
+GSDMD,Oxidation (W),P3C4 / Unstim,1,-4.723,0.219,-4.942,4.942,0.4206,Protein stable
+IL1B,Acetyl (K),LPS+Nigericin / Unstim,1,-5.942,0.665,-6.607,6.607,0.4206,Robust after correction
+HSP90AA1,Hex (K),P3C4+Nigericin / P3C4,2,2.594,-0.914,3.508,3.508,0.4217,Robust after correction
+HSPA8,Trimethyl (K),LPS+Nigericin / Unstim,3,-0.558,-0.515,-0.043,0.205,0.4217,Direction reversed
+GSDMD,Oxidation (W),P3C4+Nigericin / P3C4,1,4.338,-0.405,4.742,4.742,0.4219,Robust after correction
+HSP90AB1,Hex (K),P3C4+Nigericin / P3C4,1,8.472,-0.922,9.394,9.394,0.422,Robust after correction
+HSPA8,Crotonyl,P3C4 / Unstim,3,5.771,0.01,5.761,5.761,0.4222,Protein stable
+HSP90AB1,Phospho (STY),LPS / Unstim,1,10.709,-0.337,11.046,11.046,0.4226,Robust after correction
+HSP90AB1,Hex (K),P3C4 / Unstim,1,-10.001,-0.059,-9.943,9.943,0.4226,Protein stable
+HSP90AB1,Hex (K),LPS / Unstim,1,-10.165,-0.337,-9.828,9.828,0.4226,Robust after correction
+HSP90AA1,Hex (K),LPS / Unstim,3,-1.355,-0.365,-0.99,5.969,0.4227,Robust after correction
+HSP90AB1,Hex (K),LPS+Nigericin / Unstim,1,-9.577,-0.696,-8.881,8.881,0.4227,Robust after correction
+HSP90AA1,Hex (K),P3C4 / Unstim,3,-5.629,-0.067,-5.562,5.596,0.4228,Protein stable
+HSP90AA1,Hex (K),P3C4+Nigericin / Unstim,2,-5.841,-0.981,-4.86,4.86,0.4228,Robust after correction
+HSPA8,Hex (K),P3C4+Nigericin / P3C4,7,-0.632,-0.881,0.249,1.889,0.4231,Robust after correction
+HSPA8,HexNAc (ST),P3C4+Nigericin / P3C4,4,-1.811,-0.881,-0.93,1.058,0.4231,Robust after correction
+HSP90AB1,Nitrosyl,P3C4 / Unstim,4,3.14,-0.059,3.199,3.199,0.4237,Protein stable
+HSP90AB1,Myristoyl,P3C4+Nigericin / P3C4,1,6.122,-0.922,7.044,7.044,0.4239,Robust after correction
+HSP90AB1,HexNAc (ST),LPS+Nigericin / Unstim,1,0.415,-0.696,1.111,1.111,0.4244,Robust after correction
+HSPA8,Acetyl (K),LPS+Nigericin / LPS,2,-2.166,-0.216,-1.95,3.416,0.4245,Protein stable
+HSP90AB1,Myristoyl,P3C4+Nigericin / Unstim,1,5.818,-0.98,6.799,6.799,0.4252,Robust after correction
+IL1B,Myristoyl,LPS+Nigericin / Unstim,1,0.893,0.665,0.228,0.228,0.4385,Substantially reduced
+HSPA8,Trimethyl (K),P3C4+Nigericin / Unstim,3,-0.454,-0.871,0.417,0.417,0.4386,Direction reversed
+HSP90AA1,Sulfo (STY),LPS+Nigericin / Unstim,2,-0.713,-0.72,0.007,0.402,0.4448,Substantially reduced
+HSPA8,Phospho (STY),P3C4+Nigericin / Unstim,4,0.439,-0.871,1.31,1.31,0.4471,Robust after correction
+HSP90AB1,HexNAc (ST),P3C4 / Unstim,1,-0.543,-0.059,-0.485,0.485,0.4521,Protein stable
+GSDMD,Nitrosyl,P3C4+Nigericin / Unstim,2,-0.13,-0.186,0.056,0.359,0.4582,Protein stable
+HSPA8,GlyGly (K),P3C4+Nigericin / P3C4,2,-0.711,-0.881,0.169,0.29,0.4608,Substantially reduced
+HSPA8,Acetyl (K),LPS / Unstim,3,0.368,-0.299,0.667,0.901,0.4609,Protein stable
+HSPA8,Crotonyl,LPS / Unstim,3,0.07,-0.299,0.368,0.381,0.4664,Protein stable
+PYCARD,Trimethyl (K),LPS+Nigericin / Unstim,1,0.921,0.601,0.32,0.32,0.4674,Substantially reduced
+IL1B,Sulfo (STY),LPS+Nigericin / Unstim,5,0.615,0.665,-0.05,0.269,0.4677,Substantially reduced
+HSP90AA1,Trimethyl (K),LPS / Unstim,2,-0.358,-0.365,0.007,0.083,0.4709,Direction reversed
+HSPA8,Oxidation (W),LPS+Nigericin / Unstim,1,-0.329,-0.515,0.185,0.185,0.4731,Direction reversed
+CASP1,Nitrosyl,LPS+Nigericin / Unstim,1,-1.341,-0.518,-0.823,0.823,0.4779,Robust after correction
+HSPA8,Phospho (STY),P3C4 / Unstim,4,-0.09,0.01,-0.1,0.377,0.4796,Protein stable
+HSPA8,Phospho (STY),LPS+Nigericin / LPS,4,0.079,-0.216,0.295,0.322,0.4845,Protein stable
+HSPA8,GlyGly (K),LPS+Nigericin / Unstim,2,0.629,-0.515,1.144,1.144,0.4974,Robust after correction
+HSPA8,HexNAc (ST),P3C4+Nigericin / Unstim,4,1.96,-0.871,2.831,2.831,0.4991,Robust after correction
+PYCARD,Phospho (STY),LPS+Nigericin / LPS,1,1.004,0.197,0.807,0.807,0.5152,Protein stable
+PYCARD,Sulfo (STY),LPS+Nigericin / Unstim,1,0.98,0.601,0.38,0.38,0.5221,Substantially reduced
+HSP90AB1,Sulfo (STY),P3C4 / Unstim,1,0.19,-0.059,0.248,0.248,0.5261,Protein stable
+IL1B,Trimethyl (K),LPS / Unstim,2,1.376,1.586,-0.211,0.211,0.5262,Direction reversed
+HSP90AA1,Phospho (STY),LPS / Unstim,1,0.213,-0.365,0.578,0.578,0.5376,Robust after correction
+HSP90AB1,Acetyl (K),P3C4 / Unstim,2,0.446,-0.059,0.504,0.508,0.5441,Protein stable
+HSP90AA1,Sulfo (STY),LPS+Nigericin / LPS,2,-0.584,-0.355,-0.229,0.313,0.5447,Robust after correction
+PPP2CA,Trimethyl (K),P3C4 / Unstim,1,-0.397,-0.127,-0.27,0.27,0.5527,Protein stable
+GSDMD,Oxidation (W),LPS+Nigericin / Unstim,1,0.899,0.135,0.764,0.764,0.5539,Protein stable
+PPP2CA,Trimethyl (K),LPS+Nigericin / Unstim,1,-0.399,-0.741,0.342,0.342,0.5627,Direction reversed
+PYCARD,Phospho (STY),LPS+Nigericin / Unstim,1,0.668,0.601,0.067,0.067,0.5761,Substantially reduced
+HSP90AB1,Phospho (STY),P3C4 / Unstim,1,-0.35,-0.059,-0.291,0.291,0.5768,Protein stable
+GSDMD,Nitrosyl,P3C4 / Unstim,2,-0.215,0.219,-0.434,0.434,0.5783,Protein stable
+HSP90AB1,Hex (K),P3C4+Nigericin / Unstim,1,-1.529,-0.98,-0.549,0.549,0.5886,Substantially reduced
+CASP1,Nitrosyl,P3C4+Nigericin / P3C4,1,-0.854,-1.037,0.183,0.183,0.5895,Direction reversed
+HSP90AA1,Hex (K),LPS+Nigericin / LPS,2,-0.351,-0.355,0.004,0.152,0.5964,Direction reversed
+HSP90AB1,Crotonyl,P3C4 / Unstim,3,0.137,-0.059,0.195,0.387,0.599,Protein stable
+PYCARD,Sulfo (STY),P3C4+Nigericin / P3C4,1,-0.472,0.116,-0.587,0.587,0.6015,Protein stable
+HSP90AB1,Myristoyl,LPS+Nigericin / LPS,1,-0.228,-0.359,0.131,0.131,0.6217,Direction reversed
+HSP90AB1,Trimethyl (K),P3C4 / Unstim,2,0.247,-0.059,0.306,0.306,0.6259,Protein stable
+CASP1,Nitrosyl,P3C4 / Unstim,1,0.627,0.317,0.31,0.31,0.6398,Substantially reduced
+GSDMD,Nitrosyl,LPS+Nigericin / LPS,2,0.546,0.244,0.303,0.487,0.6544,Protein stable
+HSPA8,Oxidation (W),LPS / Unstim,1,-0.166,-0.299,0.132,0.132,0.6644,Protein stable
+HSP90AB1,Sulfo (STY),LPS+Nigericin / Unstim,1,-0.256,-0.696,0.44,0.44,0.6657,Direction reversed
+IL1B,Nitrosyl,LPS+Nigericin / Unstim,1,0.562,0.665,-0.103,0.103,0.6676,Direction reversed
+HSP90AB1,Myristoyl,LPS+Nigericin / Unstim,1,-0.189,-0.696,0.507,0.507,0.6752,Direction reversed
+CASP1,Nitrosyl,LPS+Nigericin / LPS,1,-0.949,-0.7,-0.249,0.249,0.6781,Substantially reduced
+HSPA8,GlyGly (K),P3C4+Nigericin / Unstim,2,0.01,-0.871,0.881,0.881,0.6794,Direction reversed
+IL1B,GlyGly (K),LPS+Nigericin / LPS,1,0.726,-0.922,1.648,1.648,0.6807,Robust after correction
+IL1B,Hex (K),LPS+Nigericin / LPS,1,0.726,-0.922,1.648,1.648,0.6807,Robust after correction
+HSP90AB1,Acetyl (K),LPS+Nigericin / LPS,2,-0.515,-0.359,-0.156,0.478,0.6867,Robust after correction
+HSPA8,Nitrosyl,LPS+Nigericin / Unstim,1,-0.711,-0.515,-0.196,0.196,0.6894,Substantially reduced
+IL1B,Myristoyl,P3C4+Nigericin / Unstim,1,-0.319,-0.305,-0.014,0.014,0.6904,Substantially reduced
+HSP90AA1,Acetyl (K),LPS+Nigericin / Unstim,1,-0.866,-0.72,-0.146,0.146,0.7174,Substantially reduced
+HSP90AA1,Trimethyl (K),LPS+Nigericin / LPS,1,-0.207,-0.355,0.148,0.148,0.7348,Direction reversed
+HSP90AA1,Acetyl (K),P3C4+Nigericin / Unstim,1,0.519,-0.981,1.501,1.501,0.744,Robust after correction
+IL1B,GlyGly (K),P3C4+Nigericin / Unstim,1,-0.368,-0.305,-0.063,0.063,0.7554,Substantially reduced
+HSPA8,Oxidation (W),LPS+Nigericin / LPS,1,-0.163,-0.216,0.053,0.053,0.763,Protein stable
+HSPA8,Acetyl (K),P3C4+Nigericin / Unstim,2,0.313,-0.871,1.184,1.184,0.7663,Robust after correction
+HSP90AB1,Oxidation (W),P3C4 / Unstim,2,-0.024,-0.059,0.035,0.071,0.7748,Protein stable
+HSP90AA1,Acetyl (K),LPS+Nigericin / LPS,1,-0.639,-0.355,-0.284,0.284,0.7804,Substantially reduced
+HSPA8,Oxidation (W),P3C4 / Unstim,1,0.076,0.01,0.066,0.066,0.7891,Protein stable
+IL1B,GlyGly (K),LPS / Unstim,1,-0.419,1.586,-2.005,2.005,0.7948,Robust after correction
+IL1B,Hex (K),LPS / Unstim,1,-0.419,1.586,-2.005,2.005,0.7948,Robust after correction
+IL1B,GlyGly (K),LPS+Nigericin / Unstim,1,0.307,0.665,-0.357,0.357,0.8191,Direction reversed
+IL1B,Hex (K),LPS+Nigericin / Unstim,1,0.307,0.665,-0.357,0.357,0.8191,Direction reversed
+GSDMD,Nitrosyl,P3C4+Nigericin / P3C4,2,0.085,-0.405,0.489,0.489,0.8193,Robust after correction
+IL1B,Hex (K),P3C4+Nigericin / Unstim,1,0.213,-0.305,0.518,0.518,0.8201,Robust after correction
+CASP1,Nitrosyl,LPS / Unstim,1,-0.391,0.183,-0.574,0.574,0.8271,Protein stable
+HSP90AA1,HexNAc (ST),LPS / Unstim,1,0.341,-0.365,0.706,0.706,0.8345,Robust after correction
+HSP90AA1,HexNAc (ST),P3C4+Nigericin / P3C4,1,-0.089,-0.914,0.825,0.825,0.8357,Direction reversed
+PYCARD,Phospho (STY),LPS / Unstim,1,-0.337,0.403,-0.74,0.74,0.8367,Robust after correction
+GSDMD,Oxidation (W),P3C4+Nigericin / Unstim,1,-0.385,-0.186,-0.199,0.199,0.8555,Protein stable
+HSPA8,Nitrosyl,P3C4+Nigericin / P3C4,1,-0.369,-0.881,0.512,0.512,0.8624,Direction reversed
+HSP90AB1,Myristoyl,LPS / Unstim,1,0.039,-0.337,0.376,0.376,0.8644,Robust after correction
+PYCARD,Phospho (STY),P3C4+Nigericin / Unstim,1,-0.267,0.637,-0.904,0.904,0.8704,Robust after correction
+HSP90AB1,Phospho (STY),LPS+Nigericin / LPS,1,0.236,-0.359,0.595,0.595,0.8878,Robust after correction
+HSPA8,Nitrosyl,P3C4+Nigericin / Unstim,1,-0.269,-0.871,0.602,0.602,0.889,Direction reversed
+HSP90AA1,Oxidation (W),P3C4 / Unstim,1,0.02,-0.067,0.087,0.087,0.8909,Protein stable
+IL1B,Acetyl (K),P3C4+Nigericin / Unstim,1,-0.276,-0.305,0.028,0.028,0.8978,Direction reversed
+CASP1,Nitrosyl,P3C4+Nigericin / Unstim,1,-0.227,-0.72,0.493,0.493,0.9003,Direction reversed
+HSP90AA1,Oxidation (W),LPS+Nigericin / LPS,1,-0.056,-0.355,0.299,0.299,0.9098,Direction reversed
+HSP90AA1,HexNAc (ST),P3C4+Nigericin / Unstim,1,-0.21,-0.981,0.771,0.771,0.9142,Direction reversed
+HSP90AA1,Acetyl (K),LPS / Unstim,1,-0.227,-0.365,0.137,0.137,0.917,Direction reversed
+IL1B,Phospho (STY),P3C4+Nigericin / Unstim,1,-0.079,-0.305,0.226,0.226,0.9208,Direction reversed
+HSP90AA1,HexNAc (ST),P3C4 / Unstim,1,-0.121,-0.067,-0.054,0.054,0.9491,Protein stable
+HSPA8,Nitrosyl,P3C4 / Unstim,1,0.1,0.01,0.09,0.09,0.9591,Protein stable
+HSP90AA1,Nitrosyl,LPS+Nigericin / Unstim,4,-2.608,-0.72,-1.888,1.999,9e-04,Robust after correction

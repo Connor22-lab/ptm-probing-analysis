@@ -1,0 +1,12 @@
+"PTM.ModificationTitle","Mean_proteins_across_comparisons","Max_mean_abs_log2FC","N_key_comparisons_present","Detected_on_POI"
+"GlyGly (K)",379,2.234,6,TRUE
+"Hex (K)",282,2.009,6,TRUE
+"Crotonyl",397,1.992,6,TRUE
+"Trimethyl (K)",511,1.858,6,TRUE
+"Myristoyl",359,1.813,6,TRUE
+"Phospho (STY)",420,1.757,6,TRUE
+"Acetyl (K)",313,1.723,6,TRUE
+"HexNAc (ST)",340,1.632,6,TRUE
+"Sulfo (STY)",716,1.473,6,TRUE
+"Nitrosyl",681,1.324,6,TRUE
+"Oxidation (W)",344,0.981,6,TRUE

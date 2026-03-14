@@ -1,0 +1,7 @@
+"Stage","N_rows","N_removed","Pct_retained"
+"Raw dataset",828005,0,100
+"Contaminants removed",809169,18836,97.7
+"Evidence filtered
+(peptides>=2, ratios>=2)",807621,1548,97.5
+"Localisation >=0.75",789012,18609,95.3
+"Localisation >=0.90",787458,1554,95.1
