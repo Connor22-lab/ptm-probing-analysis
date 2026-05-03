@@ -4,11 +4,11 @@ data_raw/
 # Large processed files (>50 MB, not suitable for GitHub)
 data/processed/closed_corrected.csv
 
-# Private docs — Word files, PDFs, lab notebook
+# Private docs — Word files, PDFs, notes, lab notebook
 docs/*.docx
 docs/*.pdf
 docs/*.txt
-docs/lab_notebook.md
+docs/*.md
 # Office temp/lock files
 ~$*
 
