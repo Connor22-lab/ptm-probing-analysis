@@ -1,4 +1,0 @@
-Agenda for tomorrow:
-Watch visual abstract video: 
-Do an outline of what I want to include on slide, bouncing of claude and taking data into consideration
-re run the volcano analysis with comparison corrected and log 2 corrected values, probably filtering by p value just because it will look shit otherwise.

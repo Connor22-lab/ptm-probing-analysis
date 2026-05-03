@@ -1,6 +1,0 @@
-Exporting two candidate tables: differential abundance and PTM candidates, from this will construct 4 quadrant differential abundance plots, to highlight PTM fold change independent of Protein abundance change. Will export two new tables with the exact same settings so there is no mismatch.
-
-I needed to do a step before choosing my PTMS of interest, I chose them based of biological interest but I need to do an exploratory step to figure out which ones are actually interesting - modifications on poi, high fc, low p/qvalue, abundance of changes of poi. especially because my work is exploratory, but I am looking at modifications I already know are biologically relevant.
-
-
-Okay so I have done that, not really anything interesting, I need to pivot my presentation towards what I tried to do find novel ptms in inflammasome components that were upregulated at assembly and activation steps -> the results (proteome wide coverage, high q-values, low abundance of inflammasome components, maybe show some interesting proteins and modifications.)

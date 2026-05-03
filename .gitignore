@@ -1,6 +1,9 @@
 # Raw data — Spectronaut exports, never committed
 data_raw/
 
+# Large processed files (>50 MB, not suitable for GitHub)
+data/processed/closed_corrected.csv
+
 # Private docs — Word files, PDFs, lab notebook
 docs/*.docx
 docs/*.pdf

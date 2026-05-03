@@ -16,7 +16,12 @@
       "Bash(sed -i 's|library\\(tidyverse\\)|library\\(here\\)\\\\nlibrary\\(tidyverse\\)|' scripts/visualization/ptm_volcano_sample.R)",
       "Bash(grep -n \"C:\\\\\\\\\\\\\\\\Users\\\\|C:/Users\\\\|Path\\(\" \"C:\\\\Users\\\\conno\\\\Desktop\\\\Final Year School\\\\Final Year Project\\\\.claude\\\\worktrees\\\\vigilant-ellis-396e5a\\\\scripts\\\\analysis\\\\ptm_qc_and_summary.py\")",
       "Bash(grep -n \"C:\\\\\\\\\\\\\\\\Users\\\\|C:/Users\\\\|Path\\(\" \"C:\\\\Users\\\\conno\\\\Desktop\\\\Final Year School\\\\Final Year Project\\\\.claude\\\\worktrees\\\\vigilant-ellis-396e5a\\\\scripts\\\\preprocessing\\\\qvalue_check.py\")",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(xargs ls *)",
+      "Bash(awk '{print $5, $9}')",
+      "Bash(git rm *)"
     ]
   }
 }
